@@ -1,0 +1,658 @@
+.cards {
+  width: 80%;
+  padding: 0px 10% 3% 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  margin-top: 3%;
+  width: 22%;
+  min-width: 270px;
+  min-height: 200px;
+
+  display: grid;
+}
+
+.card-all-space {
+  margin-top: 3%;
+  width: 100%;
+  min-width: 270px;
+  min-height: 200px;
+
+  display: flex;
+}
+
+.card_layout_profile {
+  grid-template-columns: 1fr;
+  grid-template-rows: 10fr 1fr 40fr;
+}
+
+.card_layout_profile-s {
+  grid-template-columns: 1fr;
+  grid-template-rows: 10fr 1fr 23fr;
+}
+
+.card_layout_leagues {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr 0.5fr 14fr;
+}
+
+.card_layout_games {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.card_layout_teams {
+  grid-template-columns: 1fr;
+  grid-template-rows: 8fr 0.5fr 3fr;
+}
+
+.card_layout_exchange {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr 0.2fr 4fr;
+}
+
+.card_layout_exchange-view {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr 0.2fr 3.5fr;
+}
+
+.card_layout_exchange-agent {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr 0.2fr 5fr;
+}
+
+.card_layout_tours {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr 0.2fr 4fr;
+}
+
+.card_layout_tests-place {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr 0.2fr 10fr;
+}
+
+.card_layout_tests-about {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14fr;
+}
+
+.card_layout_all-space {
+  padding: 1% 0px 1% 0px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .card {
+    margin-top: 5%;
+    width: 25%;
+    min-width: 300px;
+    min-height: 200px;
+  }
+
+  .display-state_low-priority {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .cards {
+    width: 90%;
+    padding: 0px 5% 5% 5%;
+  }
+
+  .card {
+    margin-top: 5%;
+    width: 25%;
+    min-width: 280px;
+    min-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards {
+    width: 100%;
+    padding: 0px 0px 5% 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .card {
+    margin-top: 5%;
+    width: 40%;
+    min-width: 270px;
+    min-height: 200px;
+  }
+
+  .display-state_mid-priority {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    width: 100%;
+    padding: 3% 0px 10% 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    min-width: 270px;
+    min-height: 200px;
+  }
+
+  .card:last-of-type {
+    margin-top: 5%;
+    margin-bottom: 0px;
+    width: 90%;
+    min-width: 270px;
+    min-height: 200px;
+  }
+
+  .card__box_pic_layout-game {
+    background-color: #fff;
+    width: 1fr;
+    height: 1fr;
+    padding: 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-all-space {
+    margin-top: 0px;
+    width: 100%;
+    min-width: 270px;
+    min-height: 200px;
+
+    display: flex;
+  }
+}
+
+.card__header {
+  grid-column: 1;
+  grid-row: 1;
+
+  background-color: #000000b3;
+
+  width: 100%;
+  min-height: 100px;
+
+  border-radius: 3px;
+}
+
+.card__header_cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  transition-duration: 300ms;
+
+  border-radius: 3px;
+}
+
+.card__header_cover:hover {
+  background-color: #ffffff1c;
+}
+
+.card__empty-space {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card__header_pic {
+  max-width: 300px;
+  min-height: 200px;
+  height: auto;
+}
+
+.card__header_pic_profile {
+  padding-top: 2%;
+  max-width: 35px;
+  min-height: 35px;
+  height: auto;
+}
+
+.card__header_pic_leagues {
+  max-width: 150px;
+  min-height: 150px;
+  height: auto;
+}
+
+.card__header_pic_teams {
+  max-width: 150px;
+  min-height: 150px;
+  height: auto;
+}
+
+.card__header_box_pic {
+  background-color: #fff;
+  padding: 5%;
+}
+
+.card__header_title {
+  margin: 0px;
+  padding: 0px 5% 0px 5%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.card__space {
+  background-color: #000000b3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 3px;
+}
+
+.card__space_title {
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  width: 100%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.card__space_title_layout-game {
+  grid-column: 1/8;
+  grid-row: 1;
+}
+
+.card__space_cover {
+  width: 100%;
+  height: 100%;
+  padding: 10% 0px 10% 0px;
+
+  transition-duration: 250ms;
+
+  border-radius: 3px;
+}
+
+.card__space_cover:hover {
+  background-color: #ffffff1c;
+}
+
+.card__space_cover_layout-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 3px;
+}
+
+.card__space_cover_layout-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: auto;
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.card__space_cover_layout-tests-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 3px;
+}
+
+.card__box_text_layout-game {
+  min-width: 50px;
+  min-height: 50px;
+
+  grid-column: 3/6;
+  grid-row: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__text_layout-game {
+  margin: 0px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.card__subtitle_layout-game {
+  margin: 0px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.part__subtitle_left_layout-game {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.part__subtitle_right_layout-game {
+  grid-column: 6;
+  grid-row: 3;
+}
+
+.card__box_pic_layout-game {
+  background-color: #fff;
+  width: 3em;
+  height: 3em;
+  padding: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+}
+
+.card__space_pic_layout-game {
+  max-width: 50px;
+  min-height: 50px;
+  height: auto;
+}
+
+.part__pic_left_layout-game {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.part__pic_right_layout-game {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.card__space_cover_layout-exchange {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.card__box_pic_layout-exchange {
+  background-color: #fff;
+  width: 70%;
+  height: 5em;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+}
+
+.card__space_pic_layout-exchange {
+  max-width: 80px;
+  width: 80px;
+  min-height: 80px;
+  height: auto;
+  border: 0px;
+}
+
+.card__space_map {
+  max-width: 80px;
+  min-height: 80px;
+  height: auto;
+}
+
+.card__box_pic_layout-exchange-agent {
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+}
+
+.card__space_pic_layout-exchange-agent {
+  max-width: 200px;
+  min-height: 200px;
+  height: auto;
+}
+
+.card__title_layout-exchange {
+  width: 80%;
+  margin: 0px;
+  padding-top: 5%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.4em;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.card__border_layout-exchange {
+  padding-top: 5%;
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+}
+
+.card__border_layout-tests-place {
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+}
+
+.card__box_content_layout-exchange {
+  padding-top: 5%;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.card__text_layout-exchange {
+  margin: 0px;
+  max-width: 55%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.card__text_layout-exchange:last-of-type {
+  font-weight: bold;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.card__box_pic_layout-leagues {
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+}
+
+.card__space_pic_layout-leagues {
+  max-width: 200px;
+  min-height: 150px;
+  max-height: 150px;
+  height: auto;
+}
+
+.card__button {
+  margin: 0px;
+  padding: 0px;
+  width: 80%;
+  height: 45px;
+
+  background: #fff;
+  /**
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    **/
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition-duration: 300ms;
+}
+
+.card__button:hover {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.card__button:first-of-type {
+  margin-top: 10%;
+}
+
+.card__button:last-of-type {
+  margin-bottom: 10%;
+}
+
+.card__button_green {
+  background: linear-gradient(
+    180deg,
+    #35974a 0%,
+    rgb(50, 167, 56) 22.4%,
+    rgb(38, 108, 32) 100%
+  );
+}
+
+.card__button_green:hover {
+  background: linear-gradient(
+    180deg,
+    #35974aaf 0%,
+    rgba(50, 167, 56, 0.658) 22.4%,
+    rgba(38, 108, 32, 0.712) 100%
+  );
+}
+
+.card__button-text {
+  padding: 5%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #17191a;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.card__button-text_white {
+  color: #fff;
+}
+
+.card__button_more {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-height: 20px;
+
+  background-color: #fffff000;
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  justify-self: end;
+
+  transition-duration: 300ms;
+}
+
+.card__button_more:hover {
+  background-color: #ffffff56;
+}
+
+.card__button-text_more {
+  padding-right: 10%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.display-state_low-priority {
+}
+
+.display-state_mid-priority {
+}

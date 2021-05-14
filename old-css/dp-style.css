@@ -1,0 +1,202 @@
+.dp-info { 
+    width: 100%;
+    min-height: 300px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.3);
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dp-info__content_frame {
+    width: 100%;
+    min-height: 100px;
+
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp-info__profile-type_content_box {
+    margin: auto 20px auto 0px;
+    width: 540px;
+    height: 140px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp-info__profile-type_content_inner-frame {
+    width: 500px;
+    max-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dp-info__profile-type_content_header {
+    margin: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: 16px;
+    color: #17191A;
+
+    text-align: left;
+}
+
+.dp-info__profile-type_content_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 12px;
+    line-height: 12px;
+    color: #17191A;
+
+    text-align: left;
+}
+
+.dp-info__partners_icon_frame {
+    margin: auto 20px auto 0px;
+
+    width: 164px;
+    height: 228px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dp-info__partners_icon_box {
+    width: 164px;
+    height: 164px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp-info__partners_icon_pic {
+    width: 114px;
+    height: 114px;
+}
+
+.dp-info__partners_icon_name-box {
+    width: 164px;
+    height: 38px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dp-info__partners_icon_name-pic {
+    margin: auto 10px auto 28px;
+    width: 21px;
+    height: 21px;
+}
+
+.dp-info__partners_icon_name-text {
+    margin: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 10px;
+    line-height: 11px;
+    color: #17191A;
+
+    text-align: left;
+}
+
+.dp-info__partners_content_box {
+    margin: auto 20px auto 0px;
+    width: 526px;
+    height: 228px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dp-info__partners_content_inner-frame {
+    margin: 0px 5% 0px 5%;
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dp-info__partners_content_header {
+    margin: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: 16px;
+    color: #17191A;
+
+    text-align: left;
+}
+
+.dp-info__partners_content_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 14px;
+    color: #17191A;
+
+    text-align: left;
+}

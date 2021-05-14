@@ -1,0 +1,747 @@
+.main__player-database {
+    width: 90%;
+    height: 52px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-database_frame {
+    margin: 10px auto 10px auto;
+    width: 90%;
+    min-height: 35px;
+    max-height: 35px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.player-database_frame-m {
+    margin: 20px auto;
+    width: 90%;
+    min-height: 35px;
+    max-height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-database_titles {
+    margin: auto;
+    width: 90%;
+    min-height: 20px;
+    max-height: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.player-database_player-info_titles {
+    width: 90%;
+    min-height: 20px;
+    max-height: 20px;
+
+    margin: 0px auto 0px 35px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0;
+}
+
+.player-database_player-info_titles-xm {
+    width: 90%;
+    min-height: 20px;
+    max-height: 20px;
+
+    margin: 0px auto 0px 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px;
+}
+
+.player-database_player-info_titles-m {
+    width: 90%;
+    min-height: 20px;
+    max-height: 20px;
+
+    margin: 0px auto 0px 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px;
+}
+
+.player-database_player-info_box {
+    width: 90%;
+    min-height: 30px;
+    max-height: 30px;
+
+    margin: 0px auto 10px 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.player-database_player-info_box-xm {
+    width: 72%;
+    min-height: 30px;
+    max-height: 30px;
+
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.player-database_player-info_box-m {
+    width: 90%;
+    min-height: 30px;
+    max-height: 30px;
+
+    margin: 0px 5px 10px 5px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.player-database_player-button_box {
+    width: 12%;
+    min-height: 30px;
+    max-height: 30px;
+
+    margin: 0px 5px 10px 5px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.player-database_player-button_box-green {
+    width: 12%;
+    min-height: 30px;
+    max-height: 30px;
+
+    margin: 0px 5px 10px 5px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #35974a 0%, rgb(50, 167, 56) 22.4%, rgb(38, 108, 32) 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.player-database_player-button_box-yellow {
+    width: 12%;
+    min-height: 30px;
+    max-height: 30px;
+
+    margin: 0px 5px 10px 5px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #c5b247 0%, rgb(224, 208, 65) 22.4%, rgb(180, 172, 57) 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.player-database_player-info_title-s {
+    width: 10%;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 8px;
+    color: #8b8b8b;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    list-style: none;
+
+}
+
+.player-database_player-info_title-m {
+    width: 12%;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 8px;
+    color: #8b8b8b;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    list-style: none;
+
+}
+
+.player-database_player-info_text-s {
+    width: 8%;
+    margin: auto;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 8px;
+    color: #17191A;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    list-style: none;
+}
+
+.player-database_player-info_text-m {
+    width: 15%;
+    margin: auto;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 8px;
+    color: #17191A;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    list-style: none;
+
+}
+
+.player-database_player-button_text {
+    margin: 0px 5px 0px 10px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    list-style: none;
+
+}
+
+.player-database_player-button_icon-profile {
+    margin: 7px;
+}
+
+.player-database_player-button_icon-any {
+    margin: auto;
+}
+
+.player-database_player-button_icon-any-l {
+    margin: auto 5px auto 5px;
+}
+
+.player-database_player-button_icon-search {
+    margin: auto 2px auto 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.player-database_sort_box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 880px;
+    max-width: 880px;
+    min-height: 30px;
+    max-height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-database_sort_input {
+    width: 500px;
+    min-height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 10px;
+}
+
+.player-database_sort_search {
+    width: 24px;
+    height: 24px;
+
+    margin: auto;
+    background-color: #17191A;
+    -webkit-mask: url(/img/svg/ex-search.svg) no-repeat center;
+    mask: url(/img/svg/ex-search.svg) no-repeat center;
+}
+
+.player-database_sort_sorter {
+    width: 24px;
+    height: 24px;
+
+    margin: auto;
+    background-color: #17191A;
+    -webkit-mask: url(/img/svg/ex-sort.svg) no-repeat center;
+    mask: url(/img/svg/ex-sort.svg) no-repeat center;
+}
+
+.player-database_sort_button-short {
+    margin-left: 10px;
+    min-width: 27px;
+    min-height: 27px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-database_sort_button-short:hover .player-database_sort_search {
+    background-color: #fff;
+}
+
+.player-database_sort_button-short:hover {
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+}
+
+.player-database_sort_button-short:active .player-database_sort_search {
+    background-color: #8C2133;
+}
+
+.player-database_sort_button-short:active {
+    background: #fff;
+}
+
+.player-database_sort_button-long {
+    margin-right: 10px;
+    margin-left: 10px;
+    min-width: 54px;
+    min-height: 27px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.player-database_sort_button-long:hover .player-database_sort_sorter{
+    background-color: #fff;
+}
+
+.player-database_sort_button-long:hover {
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+}
+
+.player-database_sort_button-long:active .player-database_sort_sorter {
+    background-color: #8C2133;
+}
+
+.player-database_sort_button-long:active {
+    background: #fff;
+}
+
+.player-database_sort_button-text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+
+    text-align: center; 
+}
+
+.player-database_sort_button-text:hover {
+    color: #fff;
+}
+
+.player-database_sort_button-text:active {
+    color: #8C2133;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .player-database_titles {
+        display: none;
+    }
+
+    .player-database_player-info_box-m {
+        width: 100%;
+        min-height: 30px;
+        max-height: 90px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+
+    .player-database_frame-m {
+        margin: 20px 5%;
+        width: 90%;
+        min-height: 35px;
+        max-height: 170px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .player-database_player-button_box {
+        width: 45%;
+        min-height: 30px;
+        max-height: 30px;
+    
+        margin: 0px 0px 10px 0px;
+        padding: 0px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .main__player-database {
+        width: 90%;
+        height: 52px;
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .player-database_player-info_box-xm {
+        width: 100%;
+        min-height: 30px;
+        max-height: 30px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+
+    .player-database_player-button_box {
+        width: 45%;
+        min-height: 30px;
+        max-height: 30px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+    
+    .player-database_player-button_box-green {
+        width: 45%;
+        min-height: 30px;
+        max-height: 30px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #35974a 0%, rgb(50, 167, 56) 22.4%, rgb(38, 108, 32) 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+    
+    .player-database_player-button_box-yellow {
+        width: 45%;
+        min-height: 30px;
+        max-height: 30px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #c5b247 0%, rgb(224, 208, 65) 22.4%, rgb(180, 172, 57) 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+
+    .player-database_titles {
+        display: none;
+    }
+
+    .player-database_player-info_titles-xm {
+        width: 90%;
+        min-height: 30px;
+        max-height: 30px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 0px;
+    }
+
+    .player-database_player-info_box-m {
+        width: 100%;
+        min-height: 30px;
+        max-height: 90px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+
+    .player-database_frame-m {
+        margin: 20px 5% 20px 5%;
+        width: 90%;
+        min-height: 35px;
+        max-height: 170px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .player-database_player-info_box-xm {
+        width: 100%;
+        min-height: 30px;
+        max-height: 100px;
+    
+        margin: 0px 0px 10px 0px;
+        padding: 0px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        border: 2px solid #FFF;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+        border-radius: 5px;
+    
+        background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+        border-radius: 5px;
+    
+        cursor: pointer;
+    }
+
+    .player-database_player-info_text-s {
+        width: 12%;
+        margin: 5px;
+    
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold; 
+        font-size: 8px;
+        color: #17191A;
+        text-align: center;
+    
+        text-transform: uppercase;
+    
+        list-style: none;
+    }
+    
+    .player-database_player-info_text-m {
+        width: 18%;
+        margin: 5px;
+    
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold; 
+        font-size: 8px;
+        color: #17191A;
+        text-align: center;
+    
+        text-transform: uppercase;
+    
+        list-style: none;
+    
+    }
+
+    .player-database_player-info_titles-m {
+        display: none;
+    }
+
+    .player-database_frame-m {
+        margin: 0px 5% 20px 5%;
+        width: 90%;
+        min-height: 35px;
+        max-height: 170px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}

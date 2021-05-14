@@ -1,0 +1,39 @@
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+
+@import url(../blocks/main/main.css);
+
+@import url(../blocks/profile/profile.css);
+
+@import url(../blocks/cards/cards.css);
+
+@import url(../blocks/footer/footer.css);
+
+/** ЗАПЛАТКА **/
+
+@import url(../old-css/calendar-style.css);
+@import url(../old-css/contacts-style.css);
+@import url(../old-css/dp-instructions.css);
+@import url(../old-css/dp-landing.css);
+@import url(../old-css/dp-profile.css);
+@import url(../old-css/dp-style.css);
+@import url(../old-css/exchange-pop-up.css);
+@import url(../old-css/exchange-style.css);
+@import url(../old-css/le-commons.css);
+@import url(../old-css/le-stats.css);
+@import url(../old-css/messenger-style.css);
+@import url(../old-css/news-style.css);
+@import url(../old-css/no-auth-style.css);
+@import url(../old-css/old-shit.css);
+@import url(../old-css/pack-list-style.css);
+@import url(../old-css/player-database.css);
+@import url(../old-css/pop-up.css);
+@import url(../old-css/profile-edit-style.css);
+@import url(../old-css/profile-style.css);
+@import url(../old-css/settings-style.css);
+@import url(../old-css/tests-pop-up.css);
+@import url(../old-css/tests-style.css);
+@import url(../old-css/tour-table-style.css);
+@import url(../old-css/tours-pop-up-style.css);
+@import url(../old-css/tours-style.css);
+@import url(../old-css/main-style.css);

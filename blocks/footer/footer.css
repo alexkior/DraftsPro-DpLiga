@@ -1,0 +1,237 @@
+.footer {
+  padding: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(360deg, #828282 0%, rgba(255, 255, 255, 0) 83.33%),
+    #111111;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.23);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: flex-end;
+  align-self: flex-end;
+
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    width: 100%;
+    min-height: 220px;
+    background: linear-gradient(
+        360deg,
+        #828282 0%,
+        rgba(255, 255, 255, 0) 83.33%
+      ),
+      #111111;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.23);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(
+        360deg,
+        #828282 0%,
+        rgba(255, 255, 255, 0) 83.33%
+      ),
+      #111111;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.23);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+  }
+}
+
+.footer__content-column {
+  min-height: 200px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__content-column:first-child {
+  margin-left: 30px;
+}
+
+.footer__content-column:last-child {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__content-column {
+    margin: 0px;
+    height: 200px;
+
+    list-style: none;
+    padding: 0;
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__content-column:first-child {
+    margin-left: 0px;
+  }
+
+  .footer__content-column:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__content-column {
+    margin: 0px;
+    height: 40px;
+
+    list-style: none;
+    padding: 0;
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__content-column:first-child {
+    margin-left: 0px;
+  }
+
+  .footer__content-column:last-child {
+    margin-right: 0px;
+  }
+}
+
+.footer__inner-border {
+  height: 120px;
+  border: 1px inset #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__inner-border {
+    display: none;
+  }
+}
+
+.footer__links_header {
+  margin: 0px auto;
+  height: 40px;
+
+  margin-top: 20px;
+  list-style: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+
+  word-wrap: break-word;
+
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__links_header {
+    margin: 0px auto;
+    height: 40px;
+
+    margin-top: 20px;
+    list-style: none;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+
+    word-wrap: break-word;
+
+    word-break: break-all;
+  }
+}
+
+.footer__links_link {
+  color: #fff;
+}
+
+.footer__links_link:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer__links_text {
+  margin: 0px auto;
+  height: 24px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  color: #ffffff;
+
+  word-wrap: break-word;
+
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__links_text {
+    margin: 0px auto;
+    height: 20px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    color: #ffffff;
+
+    word-wrap: break-word;
+
+    word-break: break-all;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__links_text {
+    display: none;
+  }
+}
+
+.footer__links_text:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer__links_socials {
+  height: 20px;
+
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

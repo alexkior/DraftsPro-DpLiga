@@ -1,0 +1,1350 @@
+.tours__panel {
+    margin: auto;
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tours__panel_my-league {
+    min-height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tours__panel_my-league_text {
+    margin: 10px;
+    min-width: 100px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 11px;
+    color: #fff;
+    text-align: left;
+}
+
+.tours__panel_my-league_title {
+    margin: auto 20px auto 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: left;
+}
+
+.tours__panel_my-league_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.tours__panel_frame-row {
+    margin: auto;
+    width: 100%;
+    min-height: 130px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_frame {
+    margin: auto;
+    width: 50%;
+    min-height: 130px;
+
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_box {
+    margin: 3% 2%;
+    min-width: 400px;
+    width: 25%;
+    height: 90px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tours__panel_box {
+        margin: 7% 0 0 0;
+        min-width: 400px;
+        width: 80%;
+        height: 90px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .league-sort__frame {
+        margin: 7% 0 0 0;
+        width: 100%;
+        min-height: 40px;
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .tours__panel_box {
+        margin: 7% 0 0 0;
+        min-width: 400px;
+        width: 90%;
+        height: 90px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tours__panel {
+        margin: auto auto 7% auto;
+        width: 100%;
+        min-height: 70px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+.tours__panel_inner-row {
+    margin: 7px 0px 0px 0px;
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_inner-row-bottom {
+    margin: 15px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_team_box {
+    margin: 0px 5px 0px 5px;
+    width: 88px;
+    height: 32px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_team_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 14px;
+    color: #17191A;
+    text-align: center;
+}
+
+.tours__panel_team_score {
+    margin: 0px 5px 0px 5px;
+    width: 32px;
+    height: 32px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_team_icon {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.tours__panel_passed_box {
+    margin-top: 10px;
+    position: absolute;
+    width: 182px;
+    height: 27px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours__panel_passed_box:hover {
+    background: linear-gradient(180deg, #bd4155 0%, rgb(201, 59, 83) 22.4%, rgb(168, 50, 68) 100%);
+}
+
+.tours__panel_passed_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.league-sort__frame {
+    width: 100%;
+    min-height: 40px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3px;
+}
+
+.league-sort__select {
+    margin: 10px;
+    padding: 0px;
+    min-width: 140px;
+    height: 27px;
+    border: 0;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 10px;
+    color: #17191A;
+    text-align: center;
+
+    border-radius: 3px;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .tours__panel_box {
+        margin: 7% 0 0 0;
+        width: 100%;
+        height: 90px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tours__panel_inner-row {
+        margin: 7px 0px 0px 0px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tours__panel_team_box {
+        margin: 0px 5px 0px 5px;
+        width: 20%;
+        height: 25px;
+    
+        background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+        border-radius: 7px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tours__panel_team_score {
+        margin: 0px 5px 0px 5px;
+        width: 25px;
+        height: 25px;
+    
+        background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+        border-radius: 7px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tours__panel_team_icon {
+        margin: auto 0;
+        width: 25px;
+        height: 25px;
+    }
+
+    .tours__panel_team_text {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold; 
+        font-size: 12px;
+        color: #17191A;
+        text-align: center;
+    }
+
+}
+
+.match-center__frame {
+    margin: 20px auto 0px auto;
+    width: 840px;
+    min-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-center__box {
+    margin: 2% 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__inner-frame {
+    width: 90%;
+    max-width: 920px;
+    min-height: 30px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.match-center__row {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 36px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-center__league_icon {
+    margin: auto;
+    width: 27px;
+    height: 27px;
+}
+
+.match-center__league_title {
+    margin: auto;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 11px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-center__info_box {
+    width: 30%;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__info_title {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 11px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-center__info_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 11px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-center__time_box {
+    width: 15%;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__team_box {
+    width: 15%;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__score_box {
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__team_icon {
+    width: 27px;
+    height: 27px;
+}
+
+.match-center__status_box {
+    width: 15%;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__status_none {
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+}
+
+.match-center__status_now {
+    background: #EDE652;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+}
+
+.match-center__status_over {
+    background: #9AE07F;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+}
+
+.match-center__status_text {
+    font-family: Arial;
+    font-style: bold;
+    font-weight: bold; 
+    font-size: 10px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-center__button_box {
+    margin: 2% auto;
+    width: 40%;
+    height: 30px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-center__button_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.match-stats {
+    margin: 0px auto 0px auto;
+    width: 840px;
+    min-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_player__outer-frame {
+    margin: 20px 0px 0px 0px;
+    width: 553px;
+    min-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_player__frame {
+    margin: 0px 0px 20px 0px;
+    width: 266px;
+    min-height: 316px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_player__header_box {
+    width: 266px;
+    height: 28px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_player__header_title {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-stats_player__content_box {
+    width: 266px;
+    height: 275px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_player__content_inner-frame {
+    width: 246px;
+    height: 255px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_player__content_row {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 34px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_player__info_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 9px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-stats_player__name_box {
+    width: 97px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, rgba(229, 233, 240, 0.363) 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_player__team_box {
+    width: 62px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, rgba(229, 233, 240, 0.363) 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_player__stats_box {
+    width: 60px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, rgba(229, 233, 240, 0.363) 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.match-stats_player__button_box {
+    margin: auto;
+    width: 194px;
+    height: 32px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_player__button_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.match-stats_team__outer-frame {
+    margin: 20px 0px 0px 0px;
+    width: 266px;
+    min-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_team__frame {
+    margin: 0px 0px 20px 0px;
+    width: 266px;
+    min-height: 653px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_team__header_box {
+    width: 266px;
+    height: 28px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_team__header_title {
+    border: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-stats_team__content_box {
+    width: 266px;
+    height: 612px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_team__content_inner-frame {
+    width: 246px;
+    height: 598px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_team__content_row {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 36px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_team__info_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 9px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-stats_team__place_box {
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, rgba(229, 233, 240, 0.363) 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_team__icon_box {
+    width: 27px;
+    height: 27px;
+}
+
+.match-stats_team__team_box {
+    width: 98px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, rgba(229, 233, 240, 0.363) 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_team__stats_box {
+    width: 60px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, rgba(229, 233, 240, 0.363) 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.match-stats_team__button_box {
+    margin: auto;
+    width: 194px;
+    height: 32px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_team__button_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tours-league__box_frame {
+    margin: 20px auto 50px auto;
+    width: 840px;
+    min-height: 170px;
+}
+
+.tours-league__box-l {
+    width: 920px;
+    min-height: 170px;
+
+    margin: 20px auto auto;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league__box-m {
+    width: 840px;
+    min-height: 170px;
+
+    margin: 20px auto auto;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league__inner-frame {
+    max-width: 840px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tours-league_info-text__frame {
+    margin: 20px auto auto;
+    width: 920px;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tours-league_info-text__header_box {
+    width: 920px;
+    height: 30px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-text__header_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: center;
+}
+
+.tours-league_info-text__content_box {
+    width: 920px;
+    height: 140px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-text__content_inner-frame {
+    width: 880px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tours-league_info-text__content_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: left;
+}
+
+.tours-league_infos__frame {
+    margin: 20px auto auto;
+    width: 920px;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tours-league_info-tours__frame {
+    width: 234px;
+    height: 322px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tours-league_info-tours__header_box {
+    width: 234px;
+    height: 28px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-tours__header_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: center;
+}
+
+.tours-league_info-tours__content_box {
+    width: 234px;
+    height: 282px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-tours__content_inner-frame {
+    margin-top: 10px;
+    width: 214px;
+    height: 262px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tours-league_info-match-center__frame {
+    width: 410px;
+    height: 372px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tours-league_info-match-center__header_box {
+    width: 410px;
+    height: 28px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-match-center__header_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: center;
+}
+
+.tours-league_info-match-center__content_box {
+    width: 410px;
+    height: 332px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-match-center__content_inner-frame {
+    padding: 20px 0px 0px 0px;
+    width: 410px;
+    min-height: 332px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-exchange__frame {
+    width: 234px;
+    height: 322px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tours-league_info-exchange__header_box {
+    width: 234px;
+    height: 28px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-exchange__header_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: center;
+}
+
+.tours-league_info-exchange__content_box {
+    width: 234px;
+    height: 282px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tours-league_info-exchange__content_inner-frame {
+    margin-top: 10px;
+    width: 214px;
+    height: 262px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tours-league_info-exchange__content_row {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 36px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-stats_info-exchange__info_box {
+    width: 140px;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+    border-radius: 7px;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.match-stats_info-exchange__info_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 11px;
+    color: #17191A;
+    text-align: center;
+}
+
+.match-stats_info-exchange__info_button_box {
+    width: 60px;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 7px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_info-exchange__info_button_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.match-stats_info-exchange__button_box {
+    margin: auto;
+    width: 180px;
+    height: 25px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-stats_info-exchange__button_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .match-center__inner-frame {
+        width: 100%;
+        max-width: 920px;
+        min-height: 30px;
+        padding-bottom: 10px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+}

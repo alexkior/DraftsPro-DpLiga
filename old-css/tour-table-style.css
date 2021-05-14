@@ -1,0 +1,448 @@
+.tour-table {
+    margin: 2% auto 0 auto;
+    width: 100%;
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-table__inner-frame {
+    width: 100%;
+    max-width: 860px;
+    min-height: 120px;
+
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tour-table__row {
+    margin-bottom: 1%;
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour-table__row-l {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-table__title-place {
+    margin: auto;
+    border: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 10px;
+    color: #17191A;
+    text-align: left;
+}
+
+.tour-table__title {
+    margin: 0 auto 0 4%;
+    border: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 10px;
+    color: #17191A;
+    text-align: left;
+}
+
+.tour-table__place_box {
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-table__team_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.tour-table__team_box {
+    width: 216px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.tour-table__stats_box {
+    width: 341px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tour-table__form_box {
+    width: 119px;
+    height: 25px;
+
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tour-table__form_green {
+    width: 12px;
+    height: 12px;
+
+    background: #2FFE44;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tour-table__form_red {
+    width: 12px;
+    height: 12px;
+
+    background: #E82A2A;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tour-table__form_empty {
+    width: 12px;
+    height: 12px;
+
+    background: #C4C4C4;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tour-table__button_box {
+    margin: 10px 20px 5px 20px;
+    width: 180px;
+    height: 30px;
+
+    border: 2px solid #FFF;
+    box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #973545 0%, #A73245 22.4%, #6C202C 100%);
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour-table__button_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .tour-table__inner-frame {
+        width: 80%;
+        max-width: 860px;
+        min-height: 120px;
+    
+        padding-top: 15px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .tour-table__team_box {
+        width: 25%;
+        height: 25px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .tour-table__stats_box {
+        width: 30%;
+        height: 25px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .tour-table__form_box {
+        width: 15%;
+        height: 25px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tour-table__row {
+        margin-bottom: 3%;
+        width: 100%;
+        height: 35px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .tour-table__inner-frame {
+        width: 90%;
+        max-width: 860px;
+        min-height: 120px;
+    
+        padding-top: 15px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .tour-table__inner-frame {
+        width: 100%;
+        max-width: 860px;
+        min-height: 120px;
+    
+        padding-top: 15px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .tour-table__team_box {
+        width: 15%;
+        height: 25px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .tour-table__stats_box {
+        width: 35%;
+        height: 25px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .tour-table__form_box {
+        width: 20%;
+        height: 25px;
+    
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+    
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tour-table__team_icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .tour-table__place_box {
+        width: 25px;
+        height: 25px;
+    
+        border: 2px solid rgba(255, 255, 255, 0);
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0);
+    
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tour-table__team_box {
+        width: 20%;
+        height: 25px;
+    
+        border: 2px solid rgba(255, 255, 255, 0);
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0);
+    
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .tour-table__stats_box {
+        width: 30%;
+        height: 25px;
+    
+        border: 2px solid rgba(255, 255, 255, 0);
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0);
+    
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .tour-table__form_box {
+        width: 20%;
+        height: 25px;
+    
+        border: 2px solid rgba(255, 255, 255, 0);
+        box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0);
+    
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tour-table__row {
+        margin-bottom: 3%;
+        width: 100%;
+        height: 35px;
+
+        background-color: #fff;
+        box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}

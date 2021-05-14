@@ -1,0 +1,132 @@
+.main__pack-list {
+    margin: 30px auto auto;
+    width: 920px;
+    min-height: 70px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+.pack-list__frame {
+    margin: auto;
+    width: 240px;
+    height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pack-list__icon_box {
+    margin: auto;
+    width: 210px;
+    height: 210px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pack-list__icon_pic {
+    margin: auto;
+
+    width: 160px;
+    height: 160px;
+}
+
+.pack-list__button_box {
+    margin: auto;
+    
+    width: 210px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pack-list__button_text-w {
+    margin: auto;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 16px;
+    color: #17191A;
+    text-align: center;
+}
+
+.pack-list__button_text-r {
+    margin: auto;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.pack-list__info_box {
+    margin: auto;
+    
+    width: 210px;
+    height: 160px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pack-list__info_row {
+    margin: auto;
+
+    width: 210px;
+    min-height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pack-list__info_column {
+    margin: auto;
+
+    width: 180px;
+    min-height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pack-list__info_icon {
+    margin: auto 5px auto 15px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pack-list__info_text {
+    margin: auto 5px auto 5px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 12px;
+    color: #17191A;
+    text-align: left;
+}

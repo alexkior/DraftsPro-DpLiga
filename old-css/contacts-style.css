@@ -1,0 +1,224 @@
+.contacts__info_bar {
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    width: 100%;
+    min-height: 40px;
+    max-height: 40px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contacts__info_text {
+    margin: auto 2% auto 2%;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 12px;
+    line-height: 15px;
+    color: #17191A;
+    text-align: center;
+}
+
+.contacts__form {
+    margin: 40px auto auto auto;
+    max-width: 330px;
+    width: 100%;
+    min-height: 150px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contacts__form_header-text {
+    margin: 20px 5% 15px 5%;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 12px;
+    line-height: 15px;
+    color: #17191A;
+
+    text-transform: uppercase;
+}
+
+.contacts__form_header-text-bold {
+    margin: 20px 5% 15px 5%;
+
+    font-family: Arial;
+    font-style: bold;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: 17px;
+    color: #17191A;
+
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+.contacts__form_input-label {
+    margin: 15px auto 5px 32px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 12px;
+    line-height: 15px;
+    color: #17191A;
+    text-align: left;
+
+    text-transform: uppercase;
+}
+
+.contacts__form_input-m {
+    margin: 0px auto 10px auto;
+
+    width: 80%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__form_input-l-left {
+    margin: 10px auto 10px 0px;
+
+    width: 80%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.contacts__form_input-l {
+    margin: 0px auto 10px auto;
+
+    width: 80%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__form_button-box {
+    margin: 25px auto 20px auto;
+
+    width: 80%;
+    height: 40px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 14px;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__form_button-text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 14px;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.contacts__site-map {
+    margin: auto;
+    width: 920px;
+    min-height: 270px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contacts__content-column {
+    height: 100%;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__content-column:first-child {
+    margin-left: 30px;
+}
+
+.contacts__content-column:last-child {
+    margin-right: 30px;
+}
+
+.contacts__inner-border {
+    height: 175px;
+    border: 1px inset #17191A;
+}
+
+.contacts__links-header {
+    height: 40px;
+
+    margin-top: 20px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 16px;
+    color: #17191A;
+}
+
+.contacts__links-header:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.contacts__links-text {
+    margin-bottom: 3px;
+    height: 24px;
+    width: 170px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 11px;
+    color: #17191A;
+    text-align: center;
+}
+
+.contacts__links-text:hover {
+    color: #ccc;
+    cursor: pointer;
+}
