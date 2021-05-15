@@ -9,6 +9,8 @@
 
 @import url(../blocks/footer/footer.css);
 
+@import url(../old-css/old-css.css);
+
 /** ЗАПЛАТКА **/
 
 @import url(../old-css/calendar-style.css);
