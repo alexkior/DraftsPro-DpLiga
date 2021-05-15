@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль: игрок – мои тесты</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+    <header class="header">
+            <section class="header__main-menu">
+                <a class="header__main-menu_logo_box" href="./index.html">
+                    <img class="header__main-menu_logo_pic" src="./img/svg/ДРАФТС.svg" alt="dp">
+                </a>
+    
+                <div class="header__main-menu_frame">
+                    <nav class="header__main-menu_box header__main-menu_box_chosen">
+                        <a class="leagues_pic header__main-menu_pic_chosen" href="./index.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="exchange_pic header__main-menu_pic" href="./dp__exchange_questionaries.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="tests_pic header__main-menu_pic" href="./dp__tests_places.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="dp_pic header__main-menu_pic" href="./dp__draftspro_about.html"></a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="header__bottom-menu">
+                <a class="header__bottom-menu_profile_box" href="./dp__profile_player.html">
+                    <p class="header__bottom-menu_profile_text">
+                        ИГРОК
+                    </p>
+
+                    <div class="header__bottom-menu_profile_pic header__bottom-menu_profile_pic-player"></div>
+
+                    <p class="header__bottom-menu_profile_text">
+                        MPEG13
+                    </p>
+                </a>
+
+                <div class="header__bottom-menu_frame">
+                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./index.html">DP LEAGUE</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a>
+                </div>
+            </section>
+
+        </header>
+
+
+
+        <main class="main land_photo-shield_leagues-stadium-s">
+
+            <section class="profile">
+                <div class="profile__avatar_frame">
+                    <img class="profile__avatar_pic" src="/img/TALALAEV.png" alt="profile">
+
+                    <div class="profile__box_stats_left dynamic-background_shadow">
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                6
+                            </p>
+
+                            <p class="profile__stats_text">
+                                МАТЧЕЙ СЫГРАНО
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                МЯЧЕЙ ЗАБИТО
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                ПАС
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="profile__box_stats_right dynamic-background_shadow">
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                6
+                            </p>
+
+                            <p class="profile__stats_text">
+                                ГОЛ+ПАС
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                ЖЕЛТЫЕ КАРТОЧКИ
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                КРАСНЫЕ КАРТОЧКИ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="main__content-frame_m_row main__ex-sort">
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__profile_player.html">
+                        <p class="exchange-box_content_button">НАЗАД</p>
+                    </a>
+                </section>
+
+
+                <section class="main__content-frame_m_row main__ex-sort">
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" onclick="openPlayerInfo(event, 'PlayerInfo')" id="defaultOpen">
+                        <p class="exchange-box_content_button">ИНФОРМАЦИЯ</p>
+                    </a>
+    
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" onclick="openPlayerInfo(event, 'PlayerTests')">
+                        <p class="exchange-box_content_button">ТЕСТЫ</p>
+                    </a>
+    
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" onclick="openPlayerInfo(event, 'PlayerVideo')">
+                        <p class="exchange-box_content_button">ВИДЕО</p>
+                    </a>
+    
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" onclick="openPlayerInfo(event, 'PlayerContacts')">
+                        <p class="exchange-box_content_button">КОНТАКТЫ / АГЕНТ</p>
+                    </a>
+    
+                    <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex" href="./dp__profile_player_info.html">
+                        <p class="exchange-box_content_button-white">СОХРАНИТЬ</p>
+                    </a>
+                </section>
+
+
+                <section class="cards" id="PlayerInfo">
+
+                    <div class="card-all-space card_layout_all-space card__space">
+                        <div class="player-edit-info_upper-form-row">
+    
+                            <div class="player-edit-info_upper-form_side-frame">
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">ФИО</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Страна проживания</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Регион</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Город</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="player-edit-info_upper-form_side-frame">
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Спортивный разряд или звания</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Основная позиция на поле</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Вторая позиция на поле</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="player-edit-info_upper-form_content-box">
+                                    <div class="main__content-frame_s_column">
+                                        <p class="upper-form_content_head-text">Третья позиция на поле</p>
+                                        <div class="upper-form_content_input-frame">
+                                            <input class="upper-form_content_input-box-m" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="player-edit-info_upper-form_bottom-frame">
+        
+                            <div class="player-edit-info_upper-form_redselector-box">
+        
+                                <!-- СТАРЫЙ КУСОК, НО ОК -->
+                                <div class="redselector_text">Игровая нога:</div>
+                                <div class="redselectors1">
+                                    <a class="redselector_chosen">
+                                        <img src="/img/svg/SELECTOR_CHOSEN.svg" alt="SELECTOR_CHOSEN">
+                                    </a>
+                                    <div class="redselector_text">Правая</div>
+                                </div>
+                                <div class="redselectors2">
+                                    <a class="redselector">
+                                        <img src="/img/svg/SELECTOR.svg" alt="SELECTOR">
+                                    </a>
+                                    <div class="redselector_text">Левая</div>
+                                </div>
+                                <!-- СТАРЫЙ КУСОК ВСЕ -->
+        
+                            </div>
+        
+                        </div>
+                    </div>
+
+
+                    <div class="card-all-space card_layout_all-space card__space">
+                        <section class="player-edit-info_form">
+        
+                            <section class="player-edit-info_form_header-frame">
+                                <div class="player-edit-info_header_box">
+                                    <div class="player-edit-info_header_text">Футбольные школы, академии</div>
+                                </div>
+                            </section>
+        
+                            <section class="player-edit-info_form_content-frame">
+                                <div class="player-edit-info_form_infotable-box">
+        
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ГОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">НАЗВАНИЕ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">СТРАНА, ГОРОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">САЙТ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                                <button class="player-edit-info_form_infotable-box-button">
+                                    <img class="player-edit-info_form_infotable-box-button-pic" src="/img/svg/tests_minus.svg" alt="minus">
+                                </button>
+        
+                                <div class="player-edit-info_form_infotable-box">
+        
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ГОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">НАЗВАНИЕ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">СТРАНА, ГОРОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">САЙТ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                                <button class="player-edit-info_form_infotable-box-button">
+                                    <img class="player-edit-info_form_infotable-box-button-pic" src="/img/svg/tests_plus-green.svg" alt="plus">
+                                </button>
+        
+                            </section>
+        
+                            <section class="player-edit-info_form_header-frame">
+                                <div class="player-edit-info_header_box">
+                                    <div class="player-edit-info_header_text">Футбольные команды</div>
+                                </div>
+                            </section>
+        
+                            <section class="player-edit-info_form_content-frame">
+                                <div class="player-edit-info_form_infotable-box">
+        
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ГОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">НАЗВАНИЕ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">СТРАНА, ГОРОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">САЙТ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                                <button class="player-edit-info_form_infotable-box-button">
+                                    <img class="player-edit-info_form_infotable-box-button-pic" src="/img/svg/tests_plus-green.svg" alt="plus">
+                                </button>
+                            </section>
+        
+                            <section class="player-edit-info_form_header-frame">
+                                <div class="player-edit-info_header_box">
+                                    <div class="player-edit-info_header_text">Футбольные турниры</div>
+                                </div>
+                            </section>
+        
+                            <section class="player-edit-info_form_content-frame">
+                                <div class="player-edit-info_form_infotable-box">
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ГОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">НАЗВАНИЕ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">СТРАНА, ГОРОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">САЙТ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                                <button class="player-edit-info_form_infotable-box-button">
+                                    <img class="player-edit-info_form_infotable-box-button-pic" src="/img/svg/tests_plus-green.svg" alt="plus">
+                                </button>
+                            </section>
+        
+                            <section class="player-edit-info_form_header-frame">
+                                <div class="player-edit-info_header_box">
+                                    <div class="player-edit-info_header_text">Футбольные титулы, призовые места</div>
+                                </div>
+                            </section>
+        
+                            <section class="player-edit-info_form_content-frame">
+                                <div class="player-edit-info_form_infotable-box">
+        
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ГОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">НАЗВАНИЕ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">СТРАНА, ГОРОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">САЙТ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                                <button class="player-edit-info_form_infotable-box-button">
+                                    <img class="player-edit-info_form_infotable-box-button-pic" src="/img/svg/tests_plus-green.svg" alt="plus">
+                                </button>
+                            </section>
+        
+                            <section class="player-edit-info_form_header-frame">
+                                <div class="player-edit-info_header_box">
+                                    <div class="player-edit-info_header_text">Футбольные травмы</div>
+                                </div>
+                            </section>
+        
+                            <section class="player-edit-info_form_content-frame">
+                                <div class="player-edit-info_form_infotable-box">
+        
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ГОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">НАЗВАНИЕ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">СТРАНА, ГОРОД</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">ФИО ТРЕНЕРА</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+            
+                                    <ul class="player-edit-info_form_infotable-texts">
+                                        <li class="player-edit-info_form_infotable-head-text">САЙТ ШКОЛЫ</li>
+                                        <li class="player-edit-info_form_infotable-content-input">
+                                            <input class="upper-form_content_input-box-xxs">
+                                        </li>
+                                    </ul>
+        
+                                </div>
+        
+                                <button class="player-edit-info_form_infotable-box-button">
+                                    <img class="player-edit-info_form_infotable-box-button-pic" src="/img/svg/tests_plus-green.svg" alt="plus">
+                                </button>
+        
+                            </section>
+        
+                        </section>
+                    </div>    
+                </section>
+        
+                <section class="cards" id="PlayerTests">
+                    <div class="card-all-space card_layout_all-space card__space">
+                        <section class="main__content-frame_m_row main__tests-name-bar">
+                            <div class="tests-name-bar_name">ПРЕДСТОЯЩИЕ ТЕСТЫ</div>
+                        </section>
+            
+                        <section class="anybutton__color_white main__content-box_m_column main__tests-passed">
+            
+                            <div class="tests-passed_inner-frame">
+                                <div class="anybutton__color_empty tests-passed_name_box">
+                                    <p class="tests-passed_name_text">ПЛОЩАДКА ТЕСТИРОВАНИЯ НСФЛ</p>
+                                </div>
+                
+                                <div class="tests-passed_content_frame">
+                                    <div class="anybutton__color_empty tests-place_icon_box">
+                                        <img class="tests-place_icon_content" src="/img/svg/tests_pro-icon.svg" alt="tests-pro">
+                                    </div>
+                                    <div class="tests-passed_mid-part_frame">
+                
+                                        <div class="tests-place_mid-part_info_frame">
+                                            <div class="anybutton__color_empty tests-place_mid-part_info_icon-box">
+                                                <img class="tests-place_mid-part_info_icon-content" src="/img/svg/ex-clock.svg" alt="clock">
+                                            </div>
+                                            <div class="anybutton__color_empty tests-place_mid-part_info_content-box">
+                                                <div class="tests-place_mid-part_info_content-text">25 ноября 2020, 19:30</div>
+                                                <div class="tests-place_mid-part_info_content-header">ДАТА И ВРЕМЯ</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tests-place_mid-part_info_frame">
+                                            <div class="anybutton__color_empty tests-place_mid-part_info_icon-box">
+                                                <img class="tests-place_mid-part_info_icon-content" src="/img/svg/ex_world-icon-2.svg" alt="world">
+                                            </div>
+                                            <div class="anybutton__color_empty tests-place_mid-part_info_content-box">
+                                                <div class="tests-place_mid-part_info_content-text">Москва</div>
+                                                <div class="tests-place_mid-part_info_content-header">город</div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="tests-place_mid-part_info_frame">
+                                            <div class="anybutton__color_empty tests-place_mid-part_info_icon-box">
+                                                <img class="tests-place_mid-part_info_icon-content" src="/img/svg/ex_map-icon.svg" alt="map">
+                                            </div>
+                                            <div class="anybutton__color_empty tests-place_mid-part_info_content-box">
+                                                <div class="tests-place_mid-part_info_content-text">ул. Лужники, 24</div>
+                                                <div class="tests-place_mid-part_info_content-header">АДРЕС</div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                    <div class="anybutton__color_empty tests-passed_content_textbox">
+                                        <p class="tests-passed_content_text">
+                                            Уважаемый ИГРОК, мы Вас ждем 18 марта 2019 года по адресу 
+                                            ул. Лужники, 24, Москва, стадион Лужники (Центральный вход). 
+                                            В 11:30 Вам нужно быть в раздевалке, на переодевания у вас будет 
+                                            40 минут, после чего вы проходите к тренеру который Вас регистрирует. 
+                                            В середине ноября, как и положено, национальные команды проводят свои 
+                                            последние матчи в году. 2018-ый получился наиболее насыщенным – помимо 
+                                            чемпионата мира появился новый европейский турнир, к которому стоит 
+                                            относиться серьезно. Изначально «Лига Наций» создавалась как альтернатива 
+                                            товарищеским матчам, но сейчас, когда мы подошли к финишу группового 
+                                            этапа, понятно, что турнир превзошел все ожидания своим интересом, 
+                                            непредсказуемостью.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </section>
+            
+                        <section class="main__content-frame_m_row main__tests-name-bar">
+                            <div class="tests-name-bar_name">ПРОШЕДШИЕ ТЕСТЫ</div>
+                        </section>
+            
+                        <section class="anybutton__color_white main__content-box_m_column main__tests-next">
+                            <div class="anybutton__color_empty tests-next_info_bar">
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">19 НОЯ 2018  12:30</li>
+                                    <li class="tests-next_info_box_header">ДАТА и время теста</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">
+                                        <img class="tests-next_info_box_icon" src="/img/NSFL-BIG.jpg" alt="nsfl">
+                                        РЭУ (МОСКВА)
+                                    </li>
+                                    <li class="tests-next_info_box_header">КОМАНДА</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">НАПАДАЮЩИЙ</li>
+                                    <li class="tests-next_info_box_header">АМПЛУА</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">1:35</li>
+                                    <li class="tests-next_info_box_header">ВРЕМЯ ТЕСТА</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">186 СМ.</li>
+                                    <li class="tests-next_info_box_header">рост</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">86 КБ.</li>
+                                    <li class="tests-next_info_box_header">рост</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">24 ГОДА</li>
+                                    <li class="tests-next_info_box_header">ПОЛНЫХ ЛЕТ</li>
+                                </ul>
+            
+                            </div>
+            
+                            <div class="tests-next_results">
+                                <div class="tests-next_results_frame_icons">
+                                    <div class="anybutton__color_empty tests-next_icon_box">
+                                        <img class="tests-place_icon_content" src="/img/svg/tests_pro-icon.svg" alt="tests-pro">
+                                    </div>
+                                    <div class="anybutton__color_empty tests-next_icon_box">
+                                        <p class="tests-place_icon_text">ПЛОЩАДКА ТЕСТИРОВАНИЯ НСФЛ</p>
+                                    </div>
+                                </div>
+                                <div class="tests-next_results_frame_content">
+                                    <div class="main__content-box_s_row">
+                                        <ul class="anybutton__color_empty tests-next_results-bar_box">
+                                            <li class="tests-next_results-bar_content">
+                                                <img class="tests-next_results-bar_content_icon" src="/img/svg/tests_20m_30x30.svg" alt="text">
+                                            </li>
+                                            <li class="tests-next_results-bar_content-l">Спринт 20 метров</li>
+                                            <li class="tests-next_results-bar_content-m">4.00</li>
+                                            <li class="tests-next_results-bar_content-m">5</li>
+                                            <li class="tests-next_results-bar_content-m">50</li>
+                                        </ul>
+                                        <a class="anybutton__color_red tests-next_results-bar_comments_box">
+                                            <p class="tests-next_results-bar_comments_text">КОММЕНТАРИИ</p>
+                                        </a>
+                                    </div>
+                                    <div class="main__content-box_s_row">
+                                        <ul class="anybutton__color_empty tests-next_results-bar_box">
+                                            <li class="tests-next_results-bar_content">
+                                                <img class="tests-next_results-bar_content_icon" src="/img/svg/tests_cmj_30x30.svg" alt="smj">
+                                            </li>
+                                            <li class="tests-next_results-bar_content-l">SJM</li>
+                                            <li class="tests-next_results-bar_content-m">4.00</li>
+                                            <li class="tests-next_results-bar_content-m">5</li>
+                                            <li class="tests-next_results-bar_content-m">50</li>
+                                        </ul>
+                                        <a class="anybutton__color_red tests-next_results-bar_comments_box">
+                                            <p class="tests-next_results-bar_comments_text">КОММЕНТАРИИ</p>
+                                        </a>
+                                    </div>
+                                    <div class="main__content-box_s_row">
+                                        <ul class="anybutton__color_empty tests-next_results-bar_box">
+                                            <li class="tests-next_results-bar_content">
+                                                <img class="tests-next_results-bar_content_icon" src="/img/svg/tests_sj_30x30.svg" alt="sj">
+                                            </li>
+                                            <li class="tests-next_results-bar_content-l">SJ</li>
+                                            <li class="tests-next_results-bar_content-m">4.00</li>
+                                            <li class="tests-next_results-bar_content-m">5</li>
+                                            <li class="tests-next_results-bar_content-m">50</li>
+                                        </ul>
+                                        <a class="anybutton__color_red tests-next_results-bar_comments_box">
+                                            <p class="tests-next_results-bar_comments_text">КОММЕНТАРИИ</p>
+                                        </a>
+                                    </div>
+                                    <div class="main__content-box_s_row">
+                                        <ul class="anybutton__color_empty tests-next_results-bar_box">
+                                            <li class="tests-next_results-bar_content">
+                                                <img class="tests-next_results-bar_content_icon" src="/img/svg/tests_25m_30x30.svg" alt="25m">
+                                            </li>
+                                            <li class="tests-next_results-bar_content-l">Тест ловкости 25 метров</li>
+                                            <li class="tests-next_results-bar_content-m">4.00</li>
+                                            <li class="tests-next_results-bar_content-m">5</li>
+                                            <li class="tests-next_results-bar_content-m">50</li>
+                                        </ul>
+                                        <a class="anybutton__color_red tests-next_results-bar_comments_box">
+                                            <p class="tests-next_results-bar_comments_text">КОММЕНТАРИИ</p>
+                                        </a>
+                                    </div>
+                                    <div class="main__content-box_s_row">
+                                        <ul class="anybutton__color_empty tests-next_results-bar_box">
+                                            <li class="tests-next_results-bar_content">
+                                                <img class="tests-next_results-bar_content_icon" src="/img/svg/tests_beep_30x30.svg" alt="beep">
+                                            </li>
+                                            <li class="tests-next_results-bar_content-l">Beep test</li>
+                                            <li class="tests-next_results-bar_content-m">4.00</li>
+                                            <li class="tests-next_results-bar_content-m">5</li>
+                                            <li class="tests-next_results-bar_content-m">50</li>
+                                        </ul>
+                                        <a class="anybutton__color_red tests-next_results-bar_comments_box">
+                                            <p class="tests-next_results-bar_comments_text">КОММЕНТАРИИ</p>
+                                        </a>
+                                    </div>
+                                    <div class="main__content-box_s_row">
+                                        <ul class="anybutton__color_empty tests-next_results-bar_box">
+                                            <li class="tests-next_results-bar_content">
+                                                <img class="tests-next_results-bar_content_icon" src="/img/svg/tests_10x30_30x30.svg" alt="10x30">
+                                            </li>
+                                            <li class="tests-next_results-bar_content-l">10x30 метров</li>
+                                            <li class="tests-next_results-bar_content-m">4.00</li>
+                                            <li class="tests-next_results-bar_content-m">5</li>
+                                            <li class="tests-next_results-bar_content-m">50</li>
+                                        </ul>
+                                        <a class="anybutton__color_red tests-next_results-bar_comments_box">
+                                            <p class="tests-next_results-bar_comments_text">КОММЕНТАРИИ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="tests-next_summary">
+                                <div class="anybutton__color_empty tests-next_summary_name_box">
+                                    <p class="tests-next_summary_text">ИТОГО</p>
+                                </div>
+                                <div class="anybutton__color_empty tests-next_summary_summ_box">
+                                    <p class="tests-next_summary_text">ВСЕГО БАЛЛОВ</p>
+                                    <p class="tests-next_summary_text">20</p>
+                                </div>
+                                <a class="anybutton__color_empty tests-next_summary_hide-unhide_box">
+                                    <p class="tests-next_summary_text">СВЕРНУТЬ</p>
+                                </a>
+                            </div>
+                        </section>
+            
+            
+                        <section class="anybutton__color_white main__content-box_m_column main__tests-next">
+                            <div class="anybutton__color_empty tests-next_info_bar">
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">19 НОЯ 2018  12:30</li>
+                                    <li class="tests-next_info_box_header">ДАТА и время теста</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">
+                                        <img class="tests-next_info_box_icon" src="/img/NSFL-BIG.jpg" alt="nsfl">
+                                        РЭУ (МОСКВА)
+                                    </li>
+                                    <li class="tests-next_info_box_header">КОМАНДА</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">НАПАДАЮЩИЙ</li>
+                                    <li class="tests-next_info_box_header">АМПЛУА</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">1:35</li>
+                                    <li class="tests-next_info_box_header">ВРЕМЯ ТЕСТА</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">186 СМ.</li>
+                                    <li class="tests-next_info_box_header">рост</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">86 КБ.</li>
+                                    <li class="tests-next_info_box_header">рост</li>
+                                </ul>
+            
+                                <ul class="tests-next_info_box">
+                                    <li class="tests-next_info_box_content">24 ГОДА</li>
+                                    <li class="tests-next_info_box_header">ПОЛНЫХ ЛЕТ</li>
+                                </ul>
+            
+                            </div>
+            
+                            <div class="tests-next_summary">
+                                <div class="anybutton__color_empty tests-next_summary_name_box">
+                                    <p class="tests-next_summary_text">ИТОГО</p>
+                                </div>
+                                <div class="anybutton__color_empty tests-next_summary_summ_box">
+                                    <p class="tests-next_summary_text">ВСЕГО БАЛЛОВ</p>
+                                    <p class="tests-next_summary_text">20</p>
+                                </div>
+                                <a class="anybutton__color_empty tests-next_summary_hide-unhide_box">
+                                    <p class="tests-next_summary_text">РАЗВЕРНУТЬ</p>
+                                </a>
+                            </div>
+                        </section>
+                    </div>    
+                </section>
+        
+                <section class="cards" id="PlayerVideo">
+                    <div class="card-all-space card_layout_all-space card__space">
+                        <section class="player-edit-info_form">
+        
+                            <div class="player-edit-info_form_content-frame-column">
+        
+                                <section class="player-edit-info_video_section-names">
+                                    <button class="player-edit-info_video_edit-l anybutton__color_true-green"  onclick="window.location.href='/dp_instruction-video.html'">
+                                        ИНСТРУКЦИЯ ПО ЗАГРУЗКЕ ВИДЕО
+                                    </button>
+                                </section>
+                                
+                                <section class="player-edit-info_video_section-names">
+                                    <h1 class="land_photo-shield_title">
+                                        действие при игре 1 на 1
+                                    </h1>
+                                </section>
+        
+                                <section class="player-edit-info_video_section-videos">
+        
+                                    <div class="player-edit-info_video_frame">
+                                        <div class="player-edit-info_video_header-box">
+                                            <div class="player-edit-info_video_header-text">Видео 1</div>
+                                            <a class="tests-x" href=""></a>
+                                        </div>
+                
+                                        <iframe class="player-edit-info_video_link" 
+                                        src="https://www.youtube.com/embed/flOYH1hEj7o" 
+                                        frameborder="0" allow="accelerometer; autoplay; 
+                                        encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                        
+                                        <div class="player-edit-info_video_text-box">
+                                            <div class="player-edit-info_video_text">
+                                                Голевая атака с моим участием, 
+                                                Я номер №10 обвожу двух сопернико 
+                                                и отдаю голевую передачу
+                                            </div>
+                                        </div>
+        
+                                        <button class="player-edit-info_video_edit anybutton__color_red"  onclick="window.location.href='#videoEditer'">
+                                            РЕДАКТИРОВАТЬ
+                                        </button>
+                                    </div>
+            
+                                    <div class="player-edit-info_video_frame">
+                                        <div class="player-edit-info_video_header-box">
+                                            <div class="player-edit-info_video_header-text">Видео 2</div>
+                                        </div>
+                
+                                        <iframe class="player-edit-info_video_link" 
+                                        src="https://www.youtube.com/embed/flOYH1hEj7o" 
+                                        frameborder="0" allow="accelerometer; autoplay; 
+                                        encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                        
+                                        <div class="player-edit-info_video_text-box">
+                                            <div class="player-edit-info_video_text">
+                                                Голевая атака с моим участием, 
+                                                Я номер №10 обвожу двух сопернико 
+                                                и отдаю голевую передачу
+                                            </div>
+                                        </div>
+        
+                                        <button class="player-edit-info_video_edit anybutton__color_red" onclick="window.location.href='#videoEditer'">
+                                            РЕДАКТИРОВАТЬ
+                                        </button>
+                                    </div>
+            
+                                    <div class="player-edit-info_video_frame">
+        
+                                        <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                            <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                            <p class="player-edit-info_video_link-create-text">
+                                                ДОБАВИТЬ<br>ВИДЕО
+                                            </p>
+                                        </a>
+        
+                                    </div>
+        
+                                </section>
+                                
+                            </div>
+        
+                        </section>
+        
+                        <section class="player-edit-info_form">
+        
+                            <section class="player-edit-info_video_section-names">
+                                <h1 class="land_photo-shield_title">
+                                    подключение к атаке
+                                </h1>
+                            </section>
+        
+                            <section class="player-edit-info_video_section-videos">
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                            </section>
+                            
+                        </section>
+        
+                        <section class="player-edit-info_form">
+        
+                            <section class="player-edit-info_video_section-names">
+                                <h1 class="land_photo-shield_title">
+                                    фланговые навесы
+                                </h1>
+                            </section>
+        
+                            <section class="player-edit-info_video_section-videos">
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                            </section>
+                            
+                        </section>
+        
+                        <section class="player-edit-info_form">
+        
+                            <section class="player-edit-info_video_section-names">
+                                <h1 class="land_photo-shield_title">
+                                    участие в голевых моментах или голах
+                                </h1>
+                            </section>
+        
+                            <section class="player-edit-info_video_section-videos">
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                            </section>
+                            
+                        </section>
+        
+                        <section class="player-edit-info_form">
+        
+                            <section class="player-edit-info_video_section-names">
+                                <h1 class="land_photo-shield_title">
+                                    пропущенные голы с твоим участием
+                                </h1>
+                            </section>
+        
+                            <section class="player-edit-info_video_section-videos">
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                            </section>
+                            
+                        </section>
+        
+                        <section class="player-edit-info_form">
+        
+                            <section class="player-edit-info_video_section-names">
+                                <h1 class="land_photo-shield_title">
+                                    ПРИЕМ МЯЧА СЕБЕ НА ХОД В ЗОНУ
+                                </h1>
+                            </section>
+        
+                            <section class="player-edit-info_video_section-videos">
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                                <div class="player-edit-info_video_frame">
+        
+                                    <a class="player-edit-info_video_link-create" href="#videoAdder">
+                                        <img class="player-edit-info_video_link-create-pic" src="/img/svg/tests_plus-green.svg" alt="addvideo">
+                                        <p class="player-edit-info_video_link-create-text">
+                                            ДОБАВИТЬ<br>ВИДЕО
+                                        </p>
+                                    </a>
+        
+                                </div>
+        
+                            </section>
+        
+        
+                        </section>
+                    </div>
+                </section>
+        
+                <section class="cards" id="PlayerContacts">
+                    <div class="card-all-space card_layout_all-space card__space">
+                        <section class="player-edit-info_upper-form-column-contacts">
+        
+                            <div class="player-edit-info_upper-form-row">
+        
+                                <div class="player-edit-info_upper-form_side-frame">
+        
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">Контактный номер телефона</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">Ссылка на соц.сеть (своя или родителя)</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">Электронный адрес (свой или родителя)</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
+            
+                                <div class="player-edit-info_upper-form_side-frame">
+            
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">Название агентства</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">ФИО агента</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">Номер телефона агента</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="player-edit-info_upper-form_content-box">
+                                        <div class="main__content-frame_s_column">
+                                            <p class="upper-form_content_head-text">E-mail агента</p>
+                                            <div class="upper-form_content_input-frame">
+                                                <input class="upper-form_content_input-box-m" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
+        
+                            </div>
+        
+                        </section>
+                    </div>    
+                </section>
+
+
+            </main>
+            
+            <footer class="footer">
+                <ul class="footer__content-column">
+                    <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
+                    <li class="footer__links_text"></li>
+                </ul>
+    
+                <div class="footer__inner-border"></div>
+    
+                <ul class="footer__content-column">
+                    <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
+                </ul>
+    
+                <div class="footer__inner-border"></div>
+    
+                <ul class="footer__content-column">
+                    <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
+                </ul>
+    
+                <div class="footer__inner-border"></div>
+    
+                <ul class="footer__content-column">                
+                    <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
+                    <li class="footer__links_socials">
+                        <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
+                        <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
+                        <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
+                    </li>
+                    <li class="footer__links_socials">
+                        <div class="footer_socials-dp"></div>
+                    </li>
+                </ul>
+            </footer>
+            <script type="text/javascript">
+                /* ПЕРЕКЛЮЧАТЕЛЬ ИНФОРМАЦИИ ИГРОКА */
+            
+            function openPlayerInfo(evt, playerInfoName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("cards");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("menu-bottom_menu-section");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(playerInfoName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            
+            document.getElementById("defaultOpen").click();
+            </script>
+    </body>
+    </html>

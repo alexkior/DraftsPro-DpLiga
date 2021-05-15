@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои лиги: статистика турнира – судьи</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+    <header class="header">
+            <section class="header__main-menu">
+                <a class="header__main-menu_logo_box" href="./index.html">
+                    <img class="header__main-menu_logo_pic" src="./img/svg/ДРАФТС.svg" alt="dp">
+                </a>
+    
+                <div class="header__main-menu_frame">
+                    <nav class="header__main-menu_box header__main-menu_box_chosen">
+                        <a class="leagues_pic header__main-menu_pic_chosen" href="./index.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="exchange_pic header__main-menu_pic" href="./dp__exchange_questionaries.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="tests_pic header__main-menu_pic" href="./dp__tests_places.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="dp_pic header__main-menu_pic" href="./dp__draftspro_about.html"></a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="header__bottom-menu">
+                <a class="header__bottom-menu_profile_box" href="./dp__profile_player.html">
+                    <p class="header__bottom-menu_profile_text">
+                        ИГРОК
+                    </p>
+
+                    <div class="header__bottom-menu_profile_pic header__bottom-menu_profile_pic-player"></div>
+
+                    <p class="header__bottom-menu_profile_text">
+                        MPEG13
+                    </p>
+                </a>
+
+                <div class="header__bottom-menu_frame">
+                    <a class="header__bottom-menu_section" href="./index.html">DP LEAGUE</a>
+
+                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a>
+                </div>
+            </section>
+
+        </header>
+
+        <main class="main land_photo-shield_leagues-stadium">
+        
+            <div class="landing_frame land_photo-shield-colour">
+
+                <img class="land_photo-shield_icon" src="/img/NSFL_logotip.png" alt="dp">
+    
+                <h1 class="land_photo-shield_title">
+                    СТАТИСТИКА
+                </h1>
+            </div>
+
+            <section class="main__content-frame_m_row main__ex-sort">
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-tour.html">
+                    <p class="exchange-box_content_button">ТУРНИР</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-table.html">
+                    <p class="exchange-box_content_button">ТАБЛИЦА</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-players.html">
+                    <p class="exchange-box_content_button">ИГРОКИ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-calendar.html">
+                    <p class="exchange-box_content_button">КАЛЕНДАРЬ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-judges.html">
+                    <p class="exchange-box_content_button-white">СУДЬИ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-stadiums.html">
+                    <p class="exchange-box_content_button">СТАДИОНЫ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league.html">
+                    <p class="exchange-box_content_button">НАЗАД</p>
+                </a>
+            </section>
+
+            <section class="main__content-frame_m_row main__ex-sort">
+                <label class="tours__panel_my-league_text" for="">
+                    СЕЗОН:
+                </label>
+            
+                <select class="league-sort__select" id="league" name="league">
+                    <option value="nsfl">
+                        2020/2021
+                    </option>
+            
+                    <option value="nsfl">
+                        2021/2022
+                    </option>
+                </select>
+            </section>
+
+            <section class="cards">
+
+                <div class="card-all-space card_layout_all-space card__space">
+        
+                    <section class="le-stats_frame">
+                        <div class="le-stats__table_frame" id="PlayersViolations">
+                            <ul class="le-stats__table_row-title">
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title-l le-stats__white-font">
+                                        СУДЬЯ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l-disappear le-stats__white-font">
+                                        ИМЯ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title le-stats__white-font">
+                                        ЛЕТ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title le-stats__white-font">
+                                        М
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <img class="le-stats__table_img" src="/img/card-yellow.png" alt="yellow">
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <img class="le-stats__table_img" src="/img/card-two-cards.png" alt="two-cards">
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <img class="le-stats__table_img" src="/img/card-red.png" alt="red">
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title le-stats__white-font">
+                                        О
+                                    </p>
+                                </li>
+                            </ul>
+                    
+                    
+                    
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+        
+        
+        
+                            <ul class="le-stats__table_row">
+                                <li class="le-stats__table_row-judges-s-double">
+                                    <img class="le-stats__table_img" src="/img/rus.png" alt="rus">
+        
+                                    <img class="le-stats__table_img" src="/img/TALALAEV.png" alt="rus">
+                                </li>
+        
+                                <li class="le-stats__table_row-judges-xl">
+                                    <p class="le-stats__table_title-l">
+                                        РУСЛАН БАГИРОВ
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s-double">
+                                    <p class="le-stats__table_title">
+                                        25
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        12
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+        
+                                <li class="le-stats__table_row-players-s">
+                                    <p class="le-stats__table_title">
+                                        9
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        
+        </main>
+
+
+        <footer class="footer">
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
+                <li class="footer__links_text"></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">                
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
+                <li class="footer__links_socials">
+                    <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
+                    <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
+                    <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
+                </li>
+                <li class="footer__links_socials">
+                    <div class="footer_socials-dp"></div>
+                </li>
+            </ul>
+        </footer>
+<script>
+
+    /* ПЕРЕКЛЮЧАТЕЛЬ */
+    
+    function openPlayerInfo(evt, playerInfoName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("le-stats__table_frame");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("le-stats__menu_content");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(playerInfoName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

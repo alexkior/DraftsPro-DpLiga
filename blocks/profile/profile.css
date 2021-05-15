@@ -135,7 +135,7 @@
   }
 
   .profile__box_stats_right {
-    grid-column: 3;
+    grid-column: 5;
     grid-row: 2;
   }
 }
@@ -259,10 +259,10 @@
 }
 
 .profile__stats {
-  margin: auto;
-  padding: 3%;
-  width: 40px;
-  height: 60px;
+  margin: 5% 0px 5% 0px;
+  padding: 5%;
+  width: 50px;
+  height: 70px;
   background-color: #fff;
   border-radius: 3px;
 

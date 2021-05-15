@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои лиги: статистика турнира – турнир</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+    <header class="header">
+            <section class="header__main-menu">
+                <a class="header__main-menu_logo_box" href="./index.html">
+                    <img class="header__main-menu_logo_pic" src="./img/svg/ДРАФТС.svg" alt="dp">
+                </a>
+    
+                <div class="header__main-menu_frame">
+                    <nav class="header__main-menu_box header__main-menu_box_chosen">
+                        <a class="leagues_pic header__main-menu_pic_chosen" href="./index.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="exchange_pic header__main-menu_pic" href="./dp__exchange_questionaries.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="tests_pic header__main-menu_pic" href="./dp__tests_places.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="dp_pic header__main-menu_pic" href="./dp__draftspro_about.html"></a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="header__bottom-menu">
+                <a class="header__bottom-menu_profile_box" href="./dp__profile_player.html">
+                    <p class="header__bottom-menu_profile_text">
+                        ИГРОК
+                    </p>
+
+                    <div class="header__bottom-menu_profile_pic header__bottom-menu_profile_pic-player"></div>
+
+                    <p class="header__bottom-menu_profile_text">
+                        MPEG13
+                    </p>
+                </a>
+
+                <div class="header__bottom-menu_frame">
+                    <a class="header__bottom-menu_section" href="./index.html">DP LEAGUE</a>
+
+                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a>
+                </div>
+            </section>
+
+        </header>
+
+        <main class="main land_photo-shield_leagues-stadium">
+        
+            <div class="landing_frame land_photo-shield-colour">
+
+                <img class="land_photo-shield_icon" src="/img/NSFL_logotip.png" alt="dp">
+    
+                <h1 class="land_photo-shield_title">
+                    СТАТИСТИКА
+                </h1>
+            </div>
+
+            <section class="main__content-frame_m_row main__ex-sort">
+                <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-tour.html">
+                    <p class="exchange-box_content_button-white">ТУРНИР</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-table.html">
+                    <p class="exchange-box_content_button">ТАБЛИЦА</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-players.html">
+                    <p class="exchange-box_content_button">ИГРОКИ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-calendar.html">
+                    <p class="exchange-box_content_button">КАЛЕНДАРЬ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-judges.html">
+                    <p class="exchange-box_content_button">СУДЬИ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-stadiums.html">
+                    <p class="exchange-box_content_button">СТАДИОНЫ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league.html">
+                    <p class="exchange-box_content_button">НАЗАД</p>
+                </a>
+            </section>
+
+            <section class="main__content-frame_m_row main__ex-sort">
+                <label class="tours__panel_my-league_text" for="">
+                    СЕЗОН:
+                </label>
+            
+                <select class="league-sort__select" id="league" name="league">
+                    <option value="nsfl">
+                        2020/2021
+                    </option>
+            
+                    <option value="nsfl">
+                        2021/2022
+                    </option>
+                </select>
+            </section>
+
+    <section class="cards">
+
+        <div class="card-all-space card_layout_all-space card__space">
+
+            <section class="le-stats_frame">
+                <div class="le_info-row">
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            120
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Всего матчей
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            90
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Сыграно матчей
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            30
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Побед хозяев
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            18
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Ничьи
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            42
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Побед гостей
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            263
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Забито голов
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            121
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Забито голов хозяевами
+                        </p>
+                    </div>
+
+                    <div class="le_info-row__content">
+                        <p class="le_info-row__number">
+                            142
+                        </p>
+
+                        <p class="le_info-row__title">
+                            Забито голов гостями
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="le_frame">
+                <div class="le_frame__header">
+                    <h1 class="le_frame__header_title">
+                        Самая большая победа
+                    </h1>
+
+                    <div class="le_frame__header_line">
+                    </div>
+                </div>
+
+                <div class="le_frame__content">
+                    <section class="le_frame__content-pic">
+                        <img class="le_frame__content-img" src="/img/KUB.png" alt="kub">
+                    </section>
+
+                    <section class="le_frame__content-pic-right">
+                        <img class="le_frame__content-img" src="/img/svg/REU.svg" alt="reu">
+                    </section>
+
+                    <section class="le_frame__content-tour">
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_title">
+                                ДВФУ (Владивосток)
+                            </p>
+
+                            <p class="le_frame__content-tour_title">
+                                ЮФУ (Ростов-на-Дону)
+                            </p>
+                        </div>
+
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_nubmer">
+                                0
+                            </p>
+    
+                            <p class="le_info-row__number">
+                                X
+                            </p>
+    
+                            <p class="le_frame__content-tour_nubmer">
+                                9
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+
+            <section class="le_frame">
+                <div class="le_frame__header">
+                    <h1 class="le_frame__header_title">
+                        Самый большой счет
+                    </h1>
+
+                    <div class="le_frame__header_line">
+                    </div>
+                </div>
+
+                <div class="le_frame__content">
+                    <section class="le_frame__content-pic">
+                        <img class="le_frame__content-img" src="/img/KUB.png" alt="kub">
+                    </section>
+
+                    <section class="le_frame__content-pic-right">
+                        <img class="le_frame__content-img" src="/img/svg/REU.svg" alt="reu">
+                    </section>
+
+                    <section class="le_frame__content-tour">
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_title">
+                                ДВФУ (Владивосток)
+                            </p>
+
+                            <p class="le_frame__content-tour_title">
+                                ЮФУ (Ростов-на-Дону)
+                            </p>
+                        </div>
+
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_nubmer">
+                                0
+                            </p>
+    
+                            <p class="le_info-row__number">
+                                X
+                            </p>
+    
+                            <p class="le_frame__content-tour_nubmer">
+                                9
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+
+            <section class="le_frame">
+                <div class="le_frame__header">
+                    <h1 class="le_frame__header_title">
+                        Самая большая победа хозяев
+                    </h1>
+
+                    <div class="le_frame__header_line">
+                    </div>
+                </div>
+
+                <div class="le_frame__content">
+                    <section class="le_frame__content-pic">
+                        <img class="le_frame__content-img" src="/img/KUB.png" alt="kub">
+                    </section>
+
+                    <section class="le_frame__content-pic-right">
+                        <img class="le_frame__content-img" src="/img/svg/REU.svg" alt="reu">
+                    </section>
+
+                    <section class="le_frame__content-tour">
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_title">
+                                ДВФУ (Владивосток)
+                            </p>
+
+                            <p class="le_frame__content-tour_title">
+                                ЮФУ (Ростов-на-Дону)
+                            </p>
+                        </div>
+
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_nubmer">
+                                0
+                            </p>
+    
+                            <p class="le_info-row__number">
+                                X
+                            </p>
+    
+                            <p class="le_frame__content-tour_nubmer">
+                                9
+                            </p>
+                        </div>
+
+                        <div class="le_frame__content-tour_row-separate">
+                            <div class="le_frame__content-tour_row-s-double">
+                                <img class="le-stats__table_img" src="/img/KUB.png" alt="rus">
+                            </div>
+
+                            <div class="le_frame__content-tour_row-l">
+                                <p class="le-stats__table_title-calendar">
+                                    СГАФКСТ (Смоленск)
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-s-double">
+                                <p class="le-stats__table_title-bw">
+                                    5 – 1
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-l-right">
+                                <p class="le-stats__table_title-calendar">
+                                    СГАФКСТ (Смоленск)
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-s-double">
+                                <img class="le-stats__table_img" src="/img/svg/REU.svg" alt="rus">
+                            </div>
+                        </div>
+
+                        <div class="le_frame__content-tour_row-separate">
+                            <div class="le_frame__content-tour_row-s-double">
+                                <img class="le-stats__table_img" src="/img/KUB.png" alt="rus">
+                            </div>
+
+                            <div class="le_frame__content-tour_row-l">
+                                <p class="le-stats__table_title-calendar">
+                                    СГАФКСТ (Смоленск)
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-s-double">
+                                <p class="le-stats__table_title-bw">
+                                    5 – 1
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-l-right">
+                                <p class="le-stats__table_title-calendar">
+                                    СГАФКСТ (Смоленск)
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-s-double">
+                                <img class="le-stats__table_img" src="/img/svg/REU.svg" alt="rus">
+                            </div>
+                        </div>
+
+                        <div class="le_frame__content-tour_row-separate">
+                            <div class="le_frame__content-tour_row-s-double">
+                                <img class="le-stats__table_img" src="/img/KUB.png" alt="rus">
+                            </div>
+
+                            <div class="le_frame__content-tour_row-l">
+                                <p class="le-stats__table_title-calendar">
+                                    СГАФКСТ (Смоленск)
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-s-double">
+                                <p class="le-stats__table_title-bw">
+                                    5 – 1
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-l-right">
+                                <p class="le-stats__table_title-calendar">
+                                    СГАФКСТ (Смоленск)
+                                </p>
+                            </div>
+
+                            <div class="le_frame__content-tour_row-s-double">
+                                <img class="le-stats__table_img" src="/img/svg/REU.svg" alt="rus">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="le_frame">
+                <div class="le_frame__header">
+                    <h1 class="le_frame__header_title">
+                        Самая большая победа гостей
+                    </h1>
+
+                    <div class="le_frame__header_line">
+                    </div>
+                </div>
+
+                <div class="le_frame__content">
+                    <section class="le_frame__content-pic">
+                        <img class="le_frame__content-img" src="/img/KUB.png" alt="kub">
+                    </section>
+
+                    <section class="le_frame__content-pic-right">
+                        <img class="le_frame__content-img" src="/img/svg/REU.svg" alt="reu">
+                    </section>
+
+                    <section class="le_frame__content-tour">
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_title">
+                                ДВФУ (Владивосток)
+                            </p>
+
+                            <p class="le_frame__content-tour_title">
+                                ЮФУ (Ростов-на-Дону)
+                            </p>
+                        </div>
+
+                        <div class="le_frame__content-tour_row">
+                            <p class="le_frame__content-tour_nubmer">
+                                0
+                            </p>
+    
+                            <p class="le_info-row__number">
+                                X
+                            </p>
+    
+                            <p class="le_frame__content-tour_nubmer">
+                                9
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </section>
+        </main>
+
+
+        <footer class="footer">
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
+                <li class="footer__links_text"></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">                
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
+                <li class="footer__links_socials">
+                    <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
+                    <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
+                    <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
+                </li>
+                <li class="footer__links_socials">
+                    <div class="footer_socials-dp"></div>
+                </li>
+            </ul>
+        </footer>
+<script>
+</script>
+</body>
+</html>

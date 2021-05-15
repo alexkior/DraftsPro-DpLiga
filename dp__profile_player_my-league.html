@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои лиги</title>
+    <title>Профиль: игрок – моя лига</title>
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
@@ -46,9 +46,9 @@
                 </a>
 
                 <div class="header__bottom-menu_frame">
-                    <a class="header__bottom-menu_section" href="./index.html">DP LEAGUE</a>
+                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./index.html">DP LEAGUE</a>
 
-                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a>
+                    <a class="header__bottom-menu_section" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a>
 
                     <a class="header__bottom-menu_section" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a>
 
@@ -58,34 +58,101 @@
 
         </header>
 
-        <main class="main land_photo-shield_leagues-stadium">
 
-            <div class="landing_frame land_photo-shield-colour">
 
-                <img class="land_photo-shield_icon" src="./img/NSFL_logotip.png" alt="dp">
-    
-                <h1 class="land_photo-shield_title">
-                    НАЦИОНАЛЬНАЯ СТУДЕНЧЕСКАЯ ФУТБОЛЬНАЯ ЛИГА
-                </h1>
-            </div>
+        <main class="main land_photo-shield_leagues-stadium-s">
 
-            <section class="main__content-frame_m_row main__ex-sort">
-                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_about.html">
-                    <p class="exchange-box_content_button">О ЛИГЕ</p>
-                </a>
+            <section class="profile">
+                <div class="profile__avatar_frame">
+                    <img class="profile__avatar_pic" src="/img/TALALAEV.png" alt="profile">
 
-                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_play-center.html">
-                    <p class="exchange-box_content_button">МАТЧ-ЦЕНТР</p>
-                </a>
+                    <div class="profile__box_stats_left dynamic-background_shadow">
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                6
+                            </p>
 
-                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_teams.html">
-                    <p class="exchange-box_content_button">КОМАНДЫ</p>
-                </a>
+                            <p class="profile__stats_text">
+                                МАТЧЕЙ СЫГРАНО
+                            </p>
+                        </div>
 
-                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_application.html">
-                    <p class="exchange-box_content_button">ЗАЯВКА НА ТУРНИР</p>
-                </a>
-            </section>
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                МЯЧЕЙ ЗАБИТО
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                ПАС
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="profile__box_stats_right dynamic-background_shadow">
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                6
+                            </p>
+
+                            <p class="profile__stats_text">
+                                ГОЛ+ПАС
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                ЖЕЛТЫЕ КАРТОЧКИ
+                            </p>
+                        </div>
+
+                        <div class="profile__stats">
+                            <p class="profile__stats_number">
+                                1
+                            </p>
+
+                            <p class="profile__stats_text">
+                                КРАСНЫЕ КАРТОЧКИ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="main__content-frame_m_row main__ex-sort">
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__profile_player.html">
+                        <p class="exchange-box_content_button">DRAFTSPRO</p>
+                    </a>
+                        
+                    <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex"  href="./dp__profile_player_my-league.html">
+                        <p class="exchange-box_content_button-white">ЛИГА</p>
+                    </a>
+
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__profile_player_my-applications.html">
+                        <p class="exchange-box_content_button">БИРЖА</p>
+                    </a>
+
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__profile_player_my-tests.html">
+                        <p class="exchange-box_content_button">ТЕСТЫ</p>
+                    </a>
+
+                    <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__profile_player_info.html">
+                        <p class="exchange-box_content_button">АНКЕТА</p>
+                    </a>
+                </section>
+
 
             <section class="cards">
                 <div class="card card_layout_games display-state_low-priority">
@@ -1310,55 +1377,55 @@
     </div>
 
 </section>
-        </main>
 
-
-        <footer class="footer">
-            <ul class="footer__content-column">
-                <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
-                <li class="footer__links_text"></li>
-            </ul>
-
-            <div class="footer__inner-border"></div>
-
-            <ul class="footer__content-column">
-                <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
-            </ul>
-
-            <div class="footer__inner-border"></div>
-
-            <ul class="footer__content-column">
-                <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
-            </ul>
-
-            <div class="footer__inner-border"></div>
-
-            <ul class="footer__content-column">                
-                <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
-                <li class="footer__links_socials">
-                    <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
-                    <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
-                    <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
-                </li>
-                <li class="footer__links_socials">
-                    <div class="footer_socials-dp"></div>
-                </li>
-            </ul>
-        </footer>
-<script></script>
-</body>
-</html>
+            </main>
+            
+            <footer class="footer">
+                <ul class="footer__content-column">
+                    <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
+                    <li class="footer__links_text"></li>
+                </ul>
+    
+                <div class="footer__inner-border"></div>
+    
+                <ul class="footer__content-column">
+                    <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
+                </ul>
+    
+                <div class="footer__inner-border"></div>
+    
+                <ul class="footer__content-column">
+                    <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
+                </ul>
+    
+                <div class="footer__inner-border"></div>
+    
+                <ul class="footer__content-column">                
+                    <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
+                    <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
+                    <li class="footer__links_socials">
+                        <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
+                        <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
+                        <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
+                    </li>
+                    <li class="footer__links_socials">
+                        <div class="footer_socials-dp"></div>
+                    </li>
+                </ul>
+            </footer>
+    <script></script>
+    </body>
+    </html>
