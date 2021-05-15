@@ -669,9 +669,8 @@
 }
 
 .player-edit-info_upper-form-row {
-    padding-top: 20px;
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
 
     display: flex;
     flex-direction: row;
@@ -758,8 +757,7 @@
 .player-edit-info_upper-form_side-frame {
     margin-bottom: 20px;
     width: 50%;
-    max-height: none;
-    height: auto;
+    min-height: 200px;
 
     display: flex;
     flex-direction: column;
@@ -1237,7 +1235,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .player-edit-info_form_infotable-box-visible {
@@ -1273,6 +1271,7 @@
 .player-edit-info_form_infotable-texts {
     padding: 1%;
     margin: 0;
+    margin-left: 2%;
 
     display: flex;
     flex-direction: column;
