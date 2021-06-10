@@ -75,6 +75,16 @@
     align-items: flex-start;
 }
 
+.le_frame__header_title-box {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .le_frame__header_title {
     font-family: Arial;
     font-style: bold;
@@ -83,6 +93,16 @@
     line-height: 18px;
     color: #fff;
     text-align: left;
+}
+
+.le_frame__header_title-right {
+    font-family: Arial;
+    font-style: bold;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-align: right;
 }
 
 .le_frame__header_line {

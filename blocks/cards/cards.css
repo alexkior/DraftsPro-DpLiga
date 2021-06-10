@@ -12,7 +12,7 @@
   margin-top: 3%;
   width: 22%;
   min-width: 270px;
-  min-height: 200px;
+  min-height: 10px;
 
   display: grid;
 }
@@ -73,12 +73,27 @@
 
 .card_layout_tests-place {
   grid-template-columns: 1fr;
-  grid-template-rows: 14fr 0.2fr 10fr;
+  grid-template-rows: 8fr 0.2fr 2fr;
+}
+
+.card_layout_tests-passed {
+  grid-template-columns: 1fr;
+  grid-template-rows: 8fr 0.2fr 2fr;
+}
+
+.card_layout_tests-types {
+  grid-template-columns: 1fr;
+  grid-template-rows: 10fr 0.2fr 2fr;
 }
 
 .card_layout_tests-about {
   grid-template-columns: 1fr;
   grid-template-rows: 14fr;
+}
+
+.card_layout_empty {
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px;
 }
 
 .card_layout_all-space {
@@ -522,6 +537,30 @@
   font-weight: bold;
   text-align: right;
   text-transform: lowercase;
+}
+
+.card__box_content_layout-tests {
+  padding-top: 5%;
+  width: 80%;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.card__text_layout-tests {
+  margin: 0px;
+  max-width: 100%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  text-transform: none;
+  word-wrap: normal;
 }
 
 .card__box_pic_layout-leagues {

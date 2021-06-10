@@ -131,6 +131,50 @@
     }
 }
 
+
+.le-stats__table_frame-for-js {
+    margin: 0 0 1% 0;
+    max-width: 1024px;
+    width: 90%;
+    min-height: 40px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .le-stats__table_frame-for-js {
+        margin: 0 0 1% 0;
+        max-width: 100%;
+        width: 86%;
+        min-height: 40px;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .le-stats__table_frame-for-js {
+        margin: 0 0 1% 0;
+        max-width: 100%;
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .le-stats__table_row-title {
     padding: 0;
     margin: 0;
