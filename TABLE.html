@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои лиги: статистика турнира – таблица</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+    <header class="header">
+            <section class="header__main-menu">
+                <a class="header__main-menu_logo_box" href="./index.html">
+                    <img class="header__main-menu_logo_pic" src="./img/svg/ДРАФТС.svg" alt="dp">
+                </a>
+    
+                <div class="header__main-menu_frame">
+                    <nav class="header__main-menu_box header__main-menu_box_chosen">
+                        <a class="leagues_pic header__main-menu_pic_chosen" href="./index.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="exchange_pic header__main-menu_pic" href="./dp__exchange_questionaries.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="tests_pic header__main-menu_pic" href="./dp__tests_places.html"></a>
+                    </nav>
+
+                    <nav class="header__main-menu_box">
+                        <a class="dp_pic header__main-menu_pic" href="./dp__draftspro_about.html"></a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="header__bottom-menu">
+                <a class="header__bottom-menu_profile_box" href="./dp__profile_player.html">
+                    <p class="header__bottom-menu_profile_text">
+                        ИГРОК
+                    </p>
+
+                    <div class="header__bottom-menu_profile_pic header__bottom-menu_profile_pic-player"></div>
+
+                    <p class="header__bottom-menu_profile_text">
+                        MPEG13
+                    </p>
+                </a>
+
+                <div class="header__bottom-menu_frame">
+                    <a class="header__bottom-menu_section" href="./index.html">DP LEAGUE</a>
+
+                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a>
+
+                    <a class="header__bottom-menu_section" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a>
+                </div>
+            </section>
+
+        </header>
+
+        <main class="main land_photo-shield_leagues-stadium">
+
+            <!-- <div class="landing_frame land_photo-shield-colour">
+
+                <img class="land_photo-shield_icon" src="/img/NSFL_logotip.png" alt="dp">
+    
+                <h1 class="land_photo-shield_title">
+                    СТАТИСТИКА
+                </h1>
+            </div> -->
+
+            <section class="main__content-frame_m_row main__ex-sort">
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-tour.html">
+                    <p class="exchange-box_content_button">ТУРНИР</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-table.html">
+                    <p class="exchange-box_content_button-white">ТАБЛИЦА</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-players.html">
+                    <p class="exchange-box_content_button">ИГРОКИ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-calendar.html">
+                    <p class="exchange-box_content_button">КАЛЕНДАРЬ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-judges.html">
+                    <p class="exchange-box_content_button">СУДЬИ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league_stats-stadiums.html">
+                    <p class="exchange-box_content_button">СТАДИОНЫ</p>
+                </a>
+
+                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="./dp__leagues_my-league.html">
+                    <p class="exchange-box_content_button">НАЗАД</p>
+                </a>
+            </section>
+
+
+<section class="cards">
+
+    <div class="card-all-space card_layout_all-space card__space">
+
+<section class="le-stats_frame">
+    <div class="le-stats__menu">
+        <nav class="le-stats__menu_content" onclick="openPlayerInfo(event, 'Group')" id="defaultOpen">
+            ГРУППОВАЯ СТАДИЯ
+        </nav>
+
+        <nav class="le-stats__menu_content" onclick="openPlayerInfo(event, 'Half')">
+            1/2 ФИНАЛА
+        </nav>
+
+        <nav class="le-stats__menu_content" onclick="openPlayerInfo(event, 'Final')">
+            ФИНАЛ
+        </nav>
+    </div>
+</section>
+
+<section class="le-stats_frame">
+    <div class="le-stats__table_frame" id="Group">
+      <p class="le-stats__table_title-l le-stats__white-font">
+        ГРУППА А
+    </p>
+        <ul class="le-stats__table_row-title">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    #
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <p class="le-stats__table_title-l le-stats__white-font">
+                    КОМАНДА
+                </p>
+            </li>
+            
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    М
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    В
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Н
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    П
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г+
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    +-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    О
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <p class="le-stats__table_title le-stats__white-font">
+                    ФОРМА
+                </p>
+            </li>
+        </ul>
+
+
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    9
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-mid">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-up">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-down">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-mid">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <br><br>
+
+
+
+        <p class="le-stats__table_title-l le-stats__white-font">
+          ГРУППА Б
+      </p>
+          <ul class="le-stats__table_row-title">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      #
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <p class="le-stats__table_title-l le-stats__white-font">
+                      КОМАНДА
+                  </p>
+              </li>
+              
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      М
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      В
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      Н
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      П
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      Г+
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      Г-
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      +-
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      О
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      ФОРМА
+                  </p>
+              </li>
+          </ul>
+  
+  
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      9
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-mid">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-up">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-down">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-mid">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+
+
+
+
+
+        <br><br>
+
+
+
+        <p class="le-stats__table_title-l le-stats__white-font">
+          ГРУППА В
+      </p>
+          <ul class="le-stats__table_row-title">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      #
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <p class="le-stats__table_title-l le-stats__white-font">
+                      КОМАНДА
+                  </p>
+              </li>
+              
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      М
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      В
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      Н
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      П
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      Г+
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      Г-
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      +-
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      О
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <p class="le-stats__table_title le-stats__white-font">
+                      ФОРМА
+                  </p>
+              </li>
+          </ul>
+  
+  
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      9
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-mid">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-up">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-down">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+  
+  
+  
+          <ul class="le-stats__table_row">
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <div class="le-stats__table_dynamics-mid">
+                  </div>
+              </li>
+  
+              <li class="le-stats__table_row-part-l">
+                  <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+  
+                  <p class="le-stats__table_title-l">
+                      КФУ (Симферополь)
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      12
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      10
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      1
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      36
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      11
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      25
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-s">
+                  <p class="le-stats__table_title">
+                      31
+                  </p>
+              </li>
+  
+              <li class="le-stats__table_row-part-m">
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_red"></div>
+                  
+                  <div class="tour-table__form_green"></div>
+  
+                  <div class="tour-table__form_empty"></div>
+  
+                  <div class="tour-table__form_green"></div>
+              </li>
+          </ul>
+    </div>
+
+
+
+
+    <div class="le-stats__table_frame" id="Half">
+      
+
+
+      <p class="le-stats__table_title-l le-stats__white-font">
+        ПАРА 1
+    </p>
+        <ul class="le-stats__table_row-title">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    #
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <p class="le-stats__table_title-l le-stats__white-font">
+                    КОМАНДА
+                </p>
+            </li>
+            
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    М
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    В
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Н
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    П
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г+
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    +-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    О
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <p class="le-stats__table_title le-stats__white-font">
+                    ФОРМА
+                </p>
+            </li>
+        </ul>
+
+
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    9
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-mid">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-up">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+
+      <br><br>
+
+
+
+      <p class="le-stats__table_title-l le-stats__white-font">
+        ПАРА 1
+    </p>
+        <ul class="le-stats__table_row-title">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    #
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <p class="le-stats__table_title-l le-stats__white-font">
+                    КОМАНДА
+                </p>
+            </li>
+            
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    М
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    В
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Н
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    П
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г+
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    +-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    О
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <p class="le-stats__table_title le-stats__white-font">
+                    ФОРМА
+                </p>
+            </li>
+        </ul>
+
+
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    9
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-mid">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-up">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="le-stats__table_frame" id="Final">
+
+
+      <p class="le-stats__table_title-l le-stats__white-font">
+        ФИНАЛ
+    </p>
+        <ul class="le-stats__table_row-title">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    #
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <p class="le-stats__table_title-l le-stats__white-font">
+                    КОМАНДА
+                </p>
+            </li>
+            
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    М
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    В
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Н
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    П
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г+
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    Г-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    +-
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title le-stats__white-font">
+                    О
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <p class="le-stats__table_title le-stats__white-font">
+                    ФОРМА
+                </p>
+            </li>
+        </ul>
+
+
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    9
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-mid">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+
+
+
+        <ul class="le-stats__table_row">
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <div class="le-stats__table_dynamics-up">
+                </div>
+            </li>
+
+            <li class="le-stats__table_row-part-l">
+                <img class="le-stats__table_img" src="/img/KUB.png" alt="kub">
+
+                <p class="le-stats__table_title-l">
+                    КФУ (Симферополь)
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    12
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    10
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    1
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    36
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    11
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    25
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-s">
+                <p class="le-stats__table_title">
+                    31
+                </p>
+            </li>
+
+            <li class="le-stats__table_row-part-m">
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_red"></div>
+                
+                <div class="tour-table__form_green"></div>
+
+                <div class="tour-table__form_empty"></div>
+
+                <div class="tour-table__form_green"></div>
+            </li>
+        </ul>
+    </div>
+
+
+</section>
+
+</div>
+</section>
+
+        </main>
+
+
+        <footer class="footer">
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
+                <li class="footer__links_text"></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
+            </ul>
+
+            <div class="footer__inner-border"></div>
+
+            <ul class="footer__content-column">                
+                <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
+                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
+                <li class="footer__links_socials">
+                    <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
+                    <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
+                    <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
+                </li>
+                <li class="footer__links_socials">
+                    <div class="footer_socials-dp"></div>
+                </li>
+            </ul>
+        </footer>
+<script>
+
+    /* ПЕРЕКЛЮЧАТЕЛЬ */
+    
+    function openPlayerInfo(evt, playerInfoName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("le-stats__table_frame");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("le-stats__menu_content");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(playerInfoName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
