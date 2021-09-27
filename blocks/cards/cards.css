@@ -536,7 +536,7 @@
 .card__text_layout-exchange:last-of-type {
   font-weight: bold;
   text-align: right;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .card__box_content_layout-tests {

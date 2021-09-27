@@ -43,15 +43,15 @@
 
 .ex-sort_input {
     width: 30%;
-    min-height: 25px;
+    min-height: 20px;
+    max-height: 20px;
 
     border: 2px solid #FFF;
     
-    border-radius: 10px;
+    border-radius: 3px;
 
     background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.23);
-    border-radius: 10px;
 }
 
 .ex-sort_button-short {

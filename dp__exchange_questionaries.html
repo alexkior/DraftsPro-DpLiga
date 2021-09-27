@@ -1,560 +1,638 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Анкеты</title>
-    <link rel="stylesheet" href="./pages/index.css">
-</head>
-<body class="page">
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
     <header class="header">
-            <section class="header__main-menu">
-                <a class="header__main-menu_logo_box" href="./index.html">
-                    <img class="header__main-menu_logo_pic" src="./img/svg/ДРАФТС.svg" alt="dp">
-                </a>
-    
-                <div class="header__main-menu_frame">
-                    <nav class="header__main-menu_box">
-                        <a class="leagues_pic header__main-menu_pic" href="./index.html"></a>
-                    </nav>
+      <section class="header__main-menu">
+        <a class="header__main-menu_logo_box" href="./index.html">
+          <img
+            class="header__main-menu_logo_pic"
+            src="./img/svg/ДРАФТС.svg"
+            alt="dp"
+          />
+        </a>
 
-                    <nav class="header__main-menu_box header__main-menu_box_chosen">
-                        <a class="exchange_pic header__main-menu_pic_chosen" href="./dp__exchange_questionaries.html"></a>
-                    </nav>
+        <div class="header__main-menu_frame">
+          <nav class="header__main-menu_box">
+            <a
+              class="leagues_pic header__main-menu_pic"
+              href="./index.html"
+            ></a>
+          </nav>
 
-                    <nav class="header__main-menu_box">
-                        <a class="tests_pic header__main-menu_pic" href="./dp__tests_places.html"></a>
-                    </nav>
+          <nav class="header__main-menu_box header__main-menu_box_chosen">
+            <a
+              class="exchange_pic header__main-menu_pic_chosen"
+              href="./dp__exchange_questionaries.html"
+            ></a>
+          </nav>
 
-                    <nav class="header__main-menu_box">
-                        <a class="dp_pic header__main-menu_pic" href="./dp__draftspro_about.html"></a>
-                    </nav>
-                </div>
-            </section>
+          <nav class="header__main-menu_box">
+            <a
+              class="tests_pic header__main-menu_pic"
+              href="./dp__tests_places.html"
+            ></a>
+          </nav>
 
-            <section class="header__bottom-menu">
-                <a class="header__bottom-menu_profile_box" href="./dp__profile_player.html">
-                    <p class="header__bottom-menu_profile_text">
-                        ИГРОК
-                    </p>
+          <nav class="header__main-menu_box">
+            <a
+              class="dp_pic header__main-menu_pic"
+              href="./dp__draftspro_about.html"
+            ></a>
+          </nav>
+        </div>
+      </section>
 
-                    <div class="header__bottom-menu_profile_pic header__bottom-menu_profile_pic-player"></div>
+      <section class="header__bottom-menu">
+        <a
+          class="header__bottom-menu_profile_box"
+          href="./dp__profile_player.html"
+        >
+          <p class="header__bottom-menu_profile_text">ИГРОК</p>
 
-                    <p class="header__bottom-menu_profile_text">
-                        MPEG13
-                    </p>
-                </a>
+          <div
+            class="header__bottom-menu_profile_pic header__bottom-menu_profile_pic-player"
+          ></div>
 
-                <div class="header__bottom-menu_frame">
-                    <a class="header__bottom-menu_section header__bottom-menu_section_chosen" href="./dp__exchange_questionaries.html">АНКЕТЫ</a>
+          <p class="header__bottom-menu_profile_text">MPEG13</p>
+        </a>
 
-                    <a class="header__bottom-menu_section" href="./dp__exchange_views.html">ПРОСМОТРЫ</a>
+        <div class="header__bottom-menu_frame">
+          <a
+            class="header__bottom-menu_section header__bottom-menu_section_chosen"
+            href="./dp__exchange_questionaries.html"
+            >АНКЕТЫ</a
+          >
 
-                    <a class="header__bottom-menu_section" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a>
+          <a
+            class="header__bottom-menu_section"
+            href="./dp__exchange_views.html"
+            >ПРОСМОТРЫ</a
+          >
 
-                    <a class="header__bottom-menu_section" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a>
-                </div>
-            </section>
+          <a
+            class="header__bottom-menu_section"
+            href="./dp__exchange_my-applications.html"
+            >МОИ ЗАЯВКИ</a
+          >
 
-        </header>
+          <a
+            class="header__bottom-menu_section"
+            href="./dp__exchange_top-agents.html"
+            >СЕЛЕКЦИОНЕРЫ</a
+          >
+        </div>
+      </section>
+    </header>
 
+    <main class="main land_photo-shield_leagues-stadium">
+      <section class="main__content-frame_m_row main__ex-sort">
+        <a
+          class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex"
+          href="#"
+        >
+          <p class="exchange-box_content_button">НАЗВАНИЕ ЛИГИ</p>
+        </a>
 
-        <main class="main land_photo-shield_leagues-stadium">
+        <input type="text" class="ex-sort_input" placeholder="НАЗВАНИЕ ЛИГИ" />
 
-            <section class="main__content-frame_m_row main__ex-sort">
-
-                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="#">
-                    <p class="exchange-box_content_button">ТРЕНЕРЫ</p>
-                </a>
-
-                <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex" href="#">
+        <!-- <a class="ex-sort_button-switch anybutton__color_green-ex-sort main__content-box_no-flex" href="#">
                     <p class="exchange-box_content_button-white">КОМАНДЫ</p>
-                </a>
+                </a> -->
 
-                <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="#">
+        <!-- <a class="ex-sort_button-switch anybutton__color_red-ex-sort main__content-box_no-flex" href="#">
                     <p class="exchange-box_content_button">АГЕНТСТВА</p>
-                </a>
-
-                <a class="anybutton__color_empty ex-sort_button-switch ex-sort_button-text" id="exSortButton" href="#exSort">ФИЛЬТР
-                    <div class="ex-sort_sort"></div>
-                </a>
-
-            </section>
-
-            <section class="cards">
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card card_layout_exchange">
-                    <div class="card__space">
-                        <a href="" class="card__space_cover card__space_cover_layout-exchange">
-                            <div class="card__box_pic_layout-exchange">
-                                <img src="./img/KUB.png" class="card__space_pic_layout-exchange" alt="">
-                            </div>
-
-                            <h3 class="card__title_layout-exchange">
-                                Кубанский государственный университет
-                            </h3>
-
-                            <div class="card__border_layout-exchange">
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    актуальность
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    до 18.05.2021
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    позиции
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    ЦП, ЦН, ЦЗ
-                                </p>
-                            </div>
-
-                            <div class="card__box_content_layout-exchange">
-                                <p class="card__text_layout-exchange">
-                                    возраст
-                                </p>
-
-                                <p class="card__text_layout-exchange">
-                                    16-18 лет
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card__empty-space">
-
-                    </div>
-
-                    <div class="card__space">
-                        <div class="card__button">
-                            <p class="card__button-text">
-                                ПОДАТЬ ЗАЯВКУ
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Это элементы верстки-->
-                <div class="card card_layout_empty"></div>
-                <div class="card card_layout_empty"></div>
-                <div class="card card_layout_empty"></div>
-            </section>
-
-        </main>
-
-
-        <footer class="footer">
-            <ul class="footer__content-column">
-                <li class="footer__links_header"><a class="footer__links_link" href="./index.html">ЛИГИ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./index.html">DP LEAGUE</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_my-league.html">МОЯ ЛИГА</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_tours.html">ЛЕНТА ТУРНИРОВ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__leagues_create-league.html">СОЗДАТЬ ЛИГУ</a></li>
-                <li class="footer__links_text"></li>
-            </ul>
-
-            <div class="footer__inner-border"></div>
-
-            <ul class="footer__content-column">
-                <li class="footer__links_header"><a class="footer__links_link" href="./dp__exchange_questionaries.html">БИРЖА</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_questionaries.html">АНКЕТЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_views.html">ПРОСМОТРЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_my-applications.html">МОИ ЗАЯВКИ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__exchange_top-agents.html">СЕЛЕКЦИОНЕРЫ</a></li>
-            </ul>
-
-            <div class="footer__inner-border"></div>
-
-            <ul class="footer__content-column">
-                <li class="footer__links_header"><a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_places.html">ЗАПИСАТЬСЯ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_results.html">МОИ ТЕСТЫ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__tests_top-results.html">ЛУЧШИЕ РЕЗУЛЬТАТЫ</a></li>
-            </ul>
-
-            <div class="footer__inner-border"></div>
-
-            <ul class="footer__content-column">                
-                <li class="footer__links_header"><a class="footer__links_link" href="./dp__draftspro_about.html">DRAFTS PRO</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_profile-types.html">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_news.html">НОВОСТИ</a></li>
-                <li class="footer__links_text"><a class="footer__links_link" href="./dp__draftspro_parnters.html">ПАРТНЕРЫ</a></li>
-                <li class="footer__links_socials">
-                    <a class="footer_socials-inst" href="https://www.instagram.com/draftspro/"></a>
-                    <a class="footer_socials-fb" href="https://www.facebook.com/draftsprocom/"></a>
-                    <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
-                </li>
-                <li class="footer__links_socials">
-                    <div class="footer_socials-dp"></div>
-                </li>
-            </ul>
-        </footer>
-<script></script>
-</body>
+                </a> -->
+
+        <a
+          class="anybutton__color_empty ex-sort_button-switch ex-sort_button-text"
+          id="exSortButton"
+          href="#exSort"
+          >ФИЛЬТР
+          <div class="ex-sort_sort"></div>
+        </a>
+      </section>
+
+      <section class="cards">
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card_layout_exchange">
+          <div class="card__space">
+            <a
+              href=""
+              class="card__space_cover card__space_cover_layout-exchange"
+            >
+              <div class="card__box_pic_layout-exchange">
+                <img
+                  src="./img/KUB.png"
+                  class="card__space_pic_layout-exchange"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="card__title_layout-exchange">
+                Кубанский государственный университет
+              </h3>
+
+              <div class="card__border_layout-exchange"></div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">актуальность</p>
+
+                <p class="card__text_layout-exchange">до 18.05.2021</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">позиции</p>
+
+                <p class="card__text_layout-exchange">ЦП, ЦН, ЦЗ</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">возраст</p>
+
+                <p class="card__text_layout-exchange">16-18 лет</p>
+              </div>
+
+              <div class="card__box_content_layout-exchange">
+                <p class="card__text_layout-exchange">название лиги</p>
+
+                <p class="card__text_layout-exchange">НСФЛ</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__empty-space"></div>
+
+          <div class="card__space">
+            <div class="card__button">
+              <p class="card__button-text">ПОДАТЬ ЗАЯВКУ</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Это элементы верстки-->
+        <div class="card card_layout_empty"></div>
+        <div class="card card_layout_empty"></div>
+        <div class="card card_layout_empty"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__content-column">
+        <li class="footer__links_header">
+          <a class="footer__links_link" href="./index.html">ЛИГИ</a>
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./index.html">DP LEAGUE</a>
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__leagues_my-league.html"
+            >МОЯ ЛИГА</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__leagues_tours.html"
+            >ЛЕНТА ТУРНИРОВ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__leagues_create-league.html"
+            >СОЗДАТЬ ЛИГУ</a
+          >
+        </li>
+        <li class="footer__links_text"></li>
+      </ul>
+
+      <div class="footer__inner-border"></div>
+
+      <ul class="footer__content-column">
+        <li class="footer__links_header">
+          <a class="footer__links_link" href="./dp__exchange_questionaries.html"
+            >БИРЖА</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__exchange_questionaries.html"
+            >АНКЕТЫ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__exchange_views.html"
+            >ПРОСМОТРЫ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a
+            class="footer__links_link"
+            href="./dp__exchange_my-applications.html"
+            >МОИ ЗАЯВКИ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__exchange_top-agents.html"
+            >СЕЛЕКЦИОНЕРЫ</a
+          >
+        </li>
+      </ul>
+
+      <div class="footer__inner-border"></div>
+
+      <ul class="footer__content-column">
+        <li class="footer__links_header">
+          <a class="footer__links_link" href="./dp__tests_places.html">ТЕСТЫ</a>
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__tests_places.html"
+            >ЗАПИСАТЬСЯ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__tests_results.html"
+            >МОИ ТЕСТЫ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__tests_top-results.html"
+            >ЛУЧШИЕ РЕЗУЛЬТАТЫ</a
+          >
+        </li>
+      </ul>
+
+      <div class="footer__inner-border"></div>
+
+      <ul class="footer__content-column">
+        <li class="footer__links_header">
+          <a class="footer__links_link" href="./dp__draftspro_about.html"
+            >DRAFTS PRO</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a
+            class="footer__links_link"
+            href="./dp__draftspro_profile-types.html"
+            >ЗАРЕГИСТРИРОВАТЬСЯ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__draftspro_news.html"
+            >НОВОСТИ</a
+          >
+        </li>
+        <li class="footer__links_text">
+          <a class="footer__links_link" href="./dp__draftspro_parnters.html"
+            >ПАРТНЕРЫ</a
+          >
+        </li>
+        <li class="footer__links_socials">
+          <a
+            class="footer_socials-inst"
+            href="https://www.instagram.com/draftspro/"
+          ></a>
+          <a
+            class="footer_socials-fb"
+            href="https://www.facebook.com/draftsprocom/"
+          ></a>
+          <a class="footer_socials-vk" href="https://vk.com/draftspro/"></a>
+        </li>
+        <li class="footer__links_socials">
+          <div class="footer_socials-dp"></div>
+        </li>
+      </ul>
+    </footer>
+    <script></script>
+  </body>
 </html>
