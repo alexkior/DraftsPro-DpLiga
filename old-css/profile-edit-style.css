@@ -820,6 +820,17 @@
     color: #fff;
 }
 
+.upper-form_content_head-text-s {
+  width: 100%;
+  height: 15px;
+  margin: 3px auto auto 5px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+
 .upper-form_content_head-text-visible {
     width: 100%;
     height: 20px;
@@ -974,9 +985,25 @@
     border-radius: 7px;
 }
 
+.upper-form_content_input-box-icon {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+
+  border: 2px solid #FFF;
+  box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
+  border-radius: 7px;
+
+  background: linear-gradient(180deg, #E5E9F0 0%, #F7F7FB 100%);
+  box-shadow: 0px 1px 4px rgba(136, 151, 182, 0.12);
+  border-radius: 7px;
+}
+
 .upper-form_content_input-box-m {
     width: 100%;
     height: 20px;
+    min-height: 20px;
 
     border: 2px solid #FFF;
     box-shadow: inset 0px 1px 0px rgba(136, 151, 182, 0.3);
